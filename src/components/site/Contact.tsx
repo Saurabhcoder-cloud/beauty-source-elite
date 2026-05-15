@@ -1,15 +1,15 @@
 import { useState } from "react";
+import { buildMailto, buildWhatsAppUrl, SALES_EMAIL } from "@/lib/sales";
 
-function Field({ label, type = "text", as = "input", name }: { label: string; type?: string; as?: "input" | "textarea"; name: string }) {
-  const [v, setV] = useState("");
-  const filled = v.length > 0;
+function Field({ label, type = "text", as = "input", name, value, onChange }: { label: string; type?: string; as?: "input" | "textarea"; name: string; value: string; onChange: (v: string) => void }) {
+  const filled = value.length > 0;
   const common = "peer w-full bg-transparent outline-none border-b border-foreground/20 focus:border-accent transition-colors py-3 text-foreground";
   return (
     <label className="relative block">
       {as === "textarea" ? (
-        <textarea name={name} rows={3} value={v} onChange={(e) => setV(e.target.value)} className={common} />
+        <textarea name={name} rows={3} value={value} onChange={(e) => onChange(e.target.value)} className={common} />
       ) : (
-        <input name={name} type={type} value={v} onChange={(e) => setV(e.target.value)} className={common} />
+        <input name={name} type={type} value={value} onChange={(e) => onChange(e.target.value)} className={common} />
       )}
       <span
         className={`pointer-events-none absolute left-0 transition-all duration-300 text-muted-foreground ${
@@ -23,6 +23,30 @@ function Field({ label, type = "text", as = "input", name }: { label: string; ty
 }
 
 export function Contact() {
+  const [form, setForm] = useState({ name: "", company: "", email: "", country: "", message: "" });
+  const set = <K extends keyof typeof form>(k: K, v: string) => setForm((f) => ({ ...f, [k]: v }));
+
+  const buildBody = () =>
+`Hello Maison Beauté,
+
+${form.message || "I'd like to discuss a wholesale opportunity."}
+
+— Name: ${form.name}
+— Company: ${form.company}
+— Email: ${form.email}
+— Destination country: ${form.country}`;
+
+  const subject = `Inquiry from ${form.company || form.name || "website visitor"}`;
+
+  const onEmail = (e: React.FormEvent) => {
+    e.preventDefault();
+    window.location.href = buildMailto(subject, buildBody());
+  };
+
+  const onWhatsApp = () => {
+    window.open(buildWhatsAppUrl(buildBody()), "_blank");
+  };
+
   return (
     <section id="contact" className="py-28 bg-gradient-blush relative overflow-hidden">
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_70%_30%,oklch(0.95_0.05_60),transparent_60%)]" />
@@ -39,8 +63,8 @@ export function Contact() {
 
           <div className="mt-10 space-y-5">
             <ContactRow icon="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0118 0z M12 7v5l3 2" label="Headquarters" value="14 Rue Saint-Honoré, 75001 Paris, France" />
-            <ContactRow icon="M3 8l9 6 9-6M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" label="Email" value="wholesale@maisonbeaute.com" href="mailto:wholesale@maisonbeaute.com" />
-            <ContactRow icon="M20 15.5A8.38 8.38 0 0117 17a8.5 8.5 0 01-7-7 8.38 8.38 0 011.5-3M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6A19.79 19.79 0 012.12 4.18 2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z" label="WhatsApp" value="+33 1 23 45 67 89" href="https://wa.me/33123456789" />
+            <ContactRow icon="M3 8l9 6 9-6M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" label="Email" value={SALES_EMAIL} href={`mailto:${SALES_EMAIL}`} />
+            <ContactRow icon="M20 15.5A8.38 8.38 0 0117 17a8.5 8.5 0 01-7-7 8.38 8.38 0 011.5-3M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6A19.79 19.79 0 012.12 4.18 2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z" label="WhatsApp" value="+33 1 23 45 67 89" href={buildWhatsAppUrl("Hello Maison Beauté, I'd like to discuss a wholesale opportunity.")} />
             <ContactRow icon="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" label="Hours" value="Mon–Fri · 9:00–18:00 CET" />
           </div>
 
@@ -54,30 +78,38 @@ export function Contact() {
           </div>
         </div>
 
-        <form
-          onSubmit={(e) => { e.preventDefault(); alert("Inquiry submitted. Our wholesale desk will reply shortly."); }}
-          className="glass rounded-3xl p-8 md:p-10 shadow-luxe space-y-2 self-start"
-        >
-          <h3 className="font-display text-2xl mb-4">Wholesale inquiry</h3>
-          <Field name="name" label="Full name" />
-          <Field name="company" label="Company" />
-          <Field name="email" type="email" label="Business email" />
-          <Field name="country" label="Destination country" />
-          <Field name="message" as="textarea" label="Brands, volumes, requirements" />
-          <button
-            type="submit"
-            className="mt-6 w-full rounded-full bg-foreground text-background py-4 text-sm font-medium hover:bg-accent transition-colors shadow-luxe"
-          >
-            Send Inquiry
-          </button>
+        <form onSubmit={onEmail} className="glass rounded-3xl p-8 md:p-10 shadow-luxe space-y-2 self-start">
+          <h3 className="font-display text-2xl mb-4">Send an inquiry</h3>
+          <Field name="name" label="Full name" value={form.name} onChange={(v) => set("name", v)} />
+          <Field name="company" label="Company" value={form.company} onChange={(v) => set("company", v)} />
+          <Field name="email" type="email" label="Business email" value={form.email} onChange={(v) => set("email", v)} />
+          <Field name="country" label="Destination country" value={form.country} onChange={(v) => set("country", v)} />
+          <Field name="message" as="textarea" label="Brands, volumes, requirements" value={form.message} onChange={(v) => set("message", v)} />
+
+          <div className="mt-6 grid sm:grid-cols-2 gap-3">
+            <button
+              type="submit"
+              className="w-full rounded-full bg-foreground text-background py-4 text-sm font-medium hover:bg-accent transition-colors shadow-luxe"
+            >
+              Send via Email
+            </button>
+            <button
+              type="button"
+              onClick={onWhatsApp}
+              className="w-full rounded-full bg-[#25D366] text-white py-4 text-sm font-medium hover:bg-[#1ebe57] transition-colors shadow-luxe inline-flex items-center justify-center gap-2"
+            >
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163a11.867 11.867 0 01-1.587-5.946C.16 5.335 5.495 0 12.05 0a11.82 11.82 0 018.413 3.488 11.82 11.82 0 013.48 8.414c-.003 6.557-5.338 11.892-11.893 11.892a11.9 11.9 0 01-5.688-1.448L.057 24z"/></svg>
+              Send via WhatsApp
+            </button>
+          </div>
           <p className="text-xs text-muted-foreground text-center pt-2">
-            Or message us instantly on WhatsApp — replies within minutes.
+            WhatsApp opens with your details prefilled — replies within minutes.
           </p>
         </form>
       </div>
 
       <a
-        href="https://wa.me/33123456789"
+        href={buildWhatsAppUrl("Hello Maison Beauté, I'd like to enquire about wholesale pricing.")}
         target="_blank"
         rel="noopener noreferrer"
         aria-label="WhatsApp"
@@ -97,12 +129,12 @@ function ContactRow({ icon, label, value, href }: { icon: string; label: string;
       </div>
       <div>
         <div className="text-xs uppercase tracking-widest text-muted-foreground">{label}</div>
-        <div className="text-foreground">{value}</div>
+        <div className="text-foreground break-all">{value}</div>
       </div>
     </>
   );
   return href ? (
-    <a href={href} className="flex items-center gap-4 hover:opacity-80 transition-opacity">{Inner}</a>
+    <a href={href} target={href.startsWith("http") ? "_blank" : undefined} rel="noopener noreferrer" className="flex items-center gap-4 hover:opacity-80 transition-opacity">{Inner}</a>
   ) : (
     <div className="flex items-center gap-4">{Inner}</div>
   );

@@ -6,6 +6,7 @@ import { Categories } from "@/components/site/Categories";
 import { WhyUs } from "@/components/site/WhyUs";
 import { About } from "@/components/site/About";
 import { Products } from "@/components/site/Products";
+import { Wholesale } from "@/components/site/Wholesale";
 import { Testimonials } from "@/components/site/Testimonials";
 import { FAQ } from "@/components/site/FAQ";
 import { Contact } from "@/components/site/Contact";
@@ -67,6 +68,7 @@ function Index() {
       <WhyUs />
       <About />
       <Products />
+      <Wholesale />
       <Testimonials />
       <FAQ />
       <Contact />
