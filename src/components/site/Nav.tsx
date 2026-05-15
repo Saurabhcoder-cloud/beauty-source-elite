@@ -4,6 +4,7 @@ const links = [
   { href: "#brands", label: "Brands" },
   { href: "#categories", label: "Categories" },
   { href: "#products", label: "Products" },
+  { href: "#wholesale", label: "Wholesale" },
   { href: "#about", label: "About" },
   { href: "#faq", label: "FAQ" },
   { href: "#contact", label: "Contact" },
