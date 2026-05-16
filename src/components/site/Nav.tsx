@@ -3,10 +3,10 @@ import { Link } from "react-router-dom";
 import { CATEGORY_LIST } from "@/lib/categories";
 
 const sections = [
-  { href: "/#wholesale", label: "Wholesale" },
-  { href: "/#about", label: "About" },
-  { href: "/#faq", label: "FAQ" },
-  { href: "/#contact", label: "Contact" },
+  { href: "/wholesale", label: "Wholesale" },
+  { href: "/about", label: "About" },
+  { href: "/faq", label: "FAQ" },
+  { href: "/contact", label: "Contact" },
 ];
 
 export function Nav() {
@@ -81,16 +81,16 @@ export function Nav() {
           </Link>
 
           {sections.map((l) => (
-            <a key={l.href} href={l.href} className="text-foreground/70 hover:text-foreground transition-colors relative group">
+            <Link key={l.href} to={l.href} className="text-foreground/70 hover:text-foreground transition-colors relative group">
               {l.label}
               <span className="absolute -bottom-1 left-0 h-px w-0 bg-accent transition-all duration-300 group-hover:w-full" />
-            </a>
+            </Link>
           ))}
         </nav>
 
-        <a href="/#wholesale" className="hidden md:inline-flex items-center gap-2 rounded-full bg-foreground text-background px-5 py-2.5 text-sm font-medium hover:bg-accent transition-colors">
+        <Link to="/wholesale" className="hidden md:inline-flex items-center gap-2 rounded-full bg-foreground text-background px-5 py-2.5 text-sm font-medium hover:bg-accent transition-colors">
           Request Pricing
-        </a>
+        </Link>
 
         <button aria-label="Menu" onClick={() => setOpen((v) => !v)} className="md:hidden rounded-full p-2 hover:bg-muted">
           <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
@@ -110,9 +110,9 @@ export function Nav() {
             <div className="px-2 pt-3 pb-2 text-[10px] uppercase tracking-widest text-muted-foreground">More</div>
             <Link to="/services" onClick={() => setOpen(false)} className="py-2 px-2 rounded-md hover:bg-muted">Services</Link>
             {sections.map((l) => (
-              <a key={l.href} href={l.href} onClick={() => setOpen(false)} className="py-2 px-2 rounded-md hover:bg-muted">{l.label}</a>
+              <Link key={l.href} to={l.href} onClick={() => setOpen(false)} className="py-2 px-2 rounded-md hover:bg-muted">{l.label}</Link>
             ))}
-            <a href="/#wholesale" onClick={() => setOpen(false)} className="mt-2 text-center rounded-full bg-foreground text-background px-5 py-2.5">Request Pricing</a>
+            <Link to="/wholesale" onClick={() => setOpen(false)} className="mt-2 text-center rounded-full bg-foreground text-background px-5 py-2.5">Request Pricing</Link>
           </div>
         </div>
       )}

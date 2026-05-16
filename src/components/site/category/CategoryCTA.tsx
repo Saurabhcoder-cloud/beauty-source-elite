@@ -28,10 +28,10 @@ export function CategoryCTA({ cat }: { cat: Category }) {
         </div>
 
         <div className="mt-12 flex flex-wrap justify-center gap-4">
-          <a href="/#wholesale" className="rounded-full bg-foreground text-background px-8 py-4 text-sm font-medium shadow-luxe hover:opacity-90 transition">
+          <a href="/wholesale" className="rounded-full bg-foreground text-background px-8 py-4 text-sm font-medium shadow-luxe hover:opacity-90 transition">
             Request Wholesale Pricing
           </a>
-          <a href="/#contact" className="rounded-full border border-foreground/20 bg-background/40 backdrop-blur-md px-8 py-4 text-sm font-medium hover:border-foreground/60 transition">
+          <a href="/contact" className="rounded-full border border-foreground/20 bg-background/40 backdrop-blur-md px-8 py-4 text-sm font-medium hover:border-foreground/60 transition">
             Talk to Sales
           </a>
         </div>

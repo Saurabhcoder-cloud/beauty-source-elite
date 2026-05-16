@@ -23,7 +23,7 @@ export function Products() {
             <p className="text-xs tracking-[0.3em] uppercase text-muted-foreground">Featured Catalog</p>
             <h2 className="mt-3 font-display text-4xl md:text-5xl">Best-selling references</h2>
           </div>
-          <a href="#wholesale" className="text-sm underline-offset-4 hover:underline text-foreground/70">
+          <a href="/wholesale" className="text-sm underline-offset-4 hover:underline text-foreground/70">
             Request the full catalog →
           </a>
         </div>

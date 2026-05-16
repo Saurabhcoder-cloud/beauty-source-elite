@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 export function Footer() {
   return (
     <footer className="bg-gradient-noir text-ivory">
@@ -21,10 +23,10 @@ export function Footer() {
         <div>
           <div className="text-xs uppercase tracking-widest text-ivory/50 mb-4">Company</div>
           <ul className="space-y-2 text-sm">
-            <li><a href="#about" className="text-ivory/80 hover:text-rose-gold transition-colors">About</a></li>
-            <li><a href="/services" className="text-ivory/80 hover:text-rose-gold transition-colors">Services</a></li>
-            <li><a href="#faq" className="text-ivory/80 hover:text-rose-gold transition-colors">FAQ</a></li>
-            <li><a href="#contact" className="text-ivory/80 hover:text-rose-gold transition-colors">Contact</a></li>
+            <li><Link to="/about" className="text-ivory/80 hover:text-rose-gold transition-colors">About</Link></li>
+            <li><Link to="/services" className="text-ivory/80 hover:text-rose-gold transition-colors">Services</Link></li>
+            <li><Link to="/faq" className="text-ivory/80 hover:text-rose-gold transition-colors">FAQ</Link></li>
+            <li><Link to="/contact" className="text-ivory/80 hover:text-rose-gold transition-colors">Contact</Link></li>
           </ul>
         </div>
       </div>

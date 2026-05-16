@@ -36,7 +36,7 @@ export function Hero() {
               </svg>
             </a>
             <a
-              href="#contact"
+              href="/wholesale"
               className="inline-flex items-center gap-2 rounded-full border border-foreground/20 bg-background/40 backdrop-blur-md px-7 py-3.5 text-sm font-medium hover:border-foreground/60 transition-all"
             >
               Request Wholesale Pricing

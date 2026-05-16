@@ -15,7 +15,7 @@ export function CategoryProducts({ cat }: { cat: Category }) {
               {cat.name} <span className="italic" style={{ color: cat.accent }}>highlights</span>
             </h2>
           </div>
-          <a href="/#wholesale" className="text-sm underline-offset-4 hover:underline text-foreground/70">
+          <a href="/wholesale" className="text-sm underline-offset-4 hover:underline text-foreground/70">
             Request the full {cat.name.toLowerCase()} catalog →
           </a>
         </div>
