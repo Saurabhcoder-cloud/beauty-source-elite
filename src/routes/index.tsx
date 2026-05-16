@@ -2,18 +2,22 @@ import { createFileRoute } from "@tanstack/react-router";
 import { Nav } from "@/components/site/Nav";
 import { Hero } from "@/components/site/Hero";
 import { Brands } from "@/components/site/Brands";
+import { MasterCategories } from "@/components/site/MasterCategories";
 import { Categories } from "@/components/site/Categories";
 import { WhyUs } from "@/components/site/WhyUs";
 import { About } from "@/components/site/About";
 import { Products } from "@/components/site/Products";
 import { Wholesale } from "@/components/site/Wholesale";
+import { BrandDirectory } from "@/components/site/BrandDirectory";
+import { WorldDistribution } from "@/components/site/WorldDistribution";
+import { EnterpriseTrust } from "@/components/site/EnterpriseTrust";
 import { Testimonials } from "@/components/site/Testimonials";
 import { FAQ } from "@/components/site/FAQ";
 import { Contact } from "@/components/site/Contact";
 import { Footer } from "@/components/site/Footer";
 
-const TITLE = "Maison Beauté — Authentic Luxury Cosmetics & Skincare Distribution";
-const DESC = "European wholesale distributor of authentic luxury cosmetics, skincare and fragrances. La Roche-Posay, The Ordinary, Olaplex, Bioderma & more — shipped to 80+ countries.";
+const TITLE = "Maison Beauté — Global Distributor of Cosmetics, Oral Care & Healthcare";
+const DESC = "International B2B wholesale of authentic cosmetics, oral care and healthcare. 90+ premium brands — L'Oréal, Bayer, Oral-B, Pfizer, La Roche-Posay — shipped to 100+ countries.";
 
 export const Route = createFileRoute("/")({
   component: Index,
@@ -21,7 +25,7 @@ export const Route = createFileRoute("/")({
     meta: [
       { title: TITLE },
       { name: "description", content: DESC },
-      { name: "keywords", content: "cosmetics wholesale supplier, authentic skincare distributor, luxury beauty products, wholesale skincare, original fragrances, European skincare brands, premium cosmetics supplier" },
+      { name: "keywords", content: "cosmetics wholesale supplier, healthcare distributor, oral care wholesale, authentic skincare distributor, luxury beauty products, wholesale pharmaceuticals, European brands export, premium cosmetics supplier" },
       { property: "og:title", content: TITLE },
       { property: "og:description", content: DESC },
       { property: "og:type", content: "website" },
@@ -63,11 +67,15 @@ function Index() {
     <main className="bg-background text-foreground overflow-x-clip">
       <Nav />
       <Hero />
+      <MasterCategories />
       <Brands />
       <Categories />
       <WhyUs />
       <About />
       <Products />
+      <BrandDirectory />
+      <WorldDistribution />
+      <EnterpriseTrust />
       <Wholesale />
       <Testimonials />
       <FAQ />
