@@ -26,14 +26,13 @@ export default function FAQPage() {
             </p>
           </div>
 
-          <div className="relative hidden lg:block">
-            <div className="glass rounded-3xl overflow-hidden shadow-luxe border border-border max-w-md">
-              <img
-                src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=1200&q=80"
-                alt="Executive logistics planning for luxury distribution"
-                className="h-full w-full object-cover"
-                loading="lazy"
-              />
+          <div className="hidden lg:block">
+            <div className="glass rounded-3xl p-8 shadow-luxe border border-border max-w-md">
+              <div className="text-xs uppercase tracking-[0.3em] text-muted-foreground">Need a tailored answer?</div>
+              <div className="mt-4 font-display text-3xl">Contact our sourcing desk directly</div>
+              <p className="mt-4 text-muted-foreground leading-relaxed text-sm">
+                Our team responds to premium wholesale enquiries with verified documentation, pricing and shipping guidance.
+              </p>
             </div>
           </div>
         </div>
