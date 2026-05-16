@@ -139,7 +139,7 @@ ${form.message || "I'd like to discuss an international wholesale opportunity."}
 
           <div className="relative overflow-hidden rounded-[2.5rem] bg-[radial-gradient(circle_at_top_right,rgba(255,255,255,0.15),transparent_20%),radial-gradient(circle_at_bottom_left,rgba(255,230,215,0.2),transparent_30%)] shadow-luxe">
             <img
-              src="https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?w=1200&q=80"
+              src="https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?w=1200&q=80"
               alt="Luxury logistics and warehouse operations"
               className="h-full w-full object-cover"
             />
@@ -160,15 +160,21 @@ ${form.message || "I'd like to discuss an international wholesale opportunity."}
               <div className="mt-4 grid gap-4 md:grid-cols-2">
                 {offices.map((office) => (
                   <div key={office.title} className="rounded-3xl bg-background/70 p-6 border border-border">
-                    <div className="flex items-center justify-between gap-4">
-                      <div>
-                        <p className="text-xs uppercase tracking-[0.3em] text-muted-foreground">{office.title}</p>
-                        <div className="mt-3 text-xl font-semibold text-foreground">{office.badge}</div>
-                      </div>
-                      <div className="rounded-2xl bg-foreground/10 px-3 py-2 text-xs uppercase tracking-[0.3em] text-foreground">
-                        {office.title}
-                      </div>
-                    </div>
+                    <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-5">
+  <div className="min-w-0">
+    <p className="text-xs uppercase tracking-[0.3em] text-muted-foreground">
+      {office.title}
+    </p>
+
+    <div className="mt-3 text-2xl font-semibold text-foreground leading-tight">
+      {office.badge}
+    </div>
+  </div>
+
+  <div className="inline-flex w-fit rounded-2xl bg-foreground/10 px-4 py-2 text-[10px] uppercase tracking-[0.28em] text-foreground">
+    {office.title}
+  </div>
+</div>
                     <p className="mt-4 text-muted-foreground leading-relaxed text-sm">{office.location}</p>
                   </div>
                 ))}
