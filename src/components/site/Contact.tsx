@@ -161,19 +161,26 @@ ${form.message || "I'd like to discuss an international wholesale opportunity."}
                 {offices.map((office) => (
                   <div key={office.title} className="rounded-3xl bg-background/70 p-6 border border-border">
                     <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-5">
-  <div className="min-w-0">
-    <p className="text-xs uppercase tracking-[0.3em] text-muted-foreground">
-      {office.title}
-    </p>
+  <div className="flex flex-col gap-4">
+  <div className="flex items-start justify-between gap-3">
+    <div>
+      <p className="text-xs uppercase tracking-[0.3em] text-muted-foreground">
+        {office.title}
+      </p>
 
-    <div className="mt-3 text-2xl font-semibold text-foreground leading-tight">
-      {office.badge}
+      <div className="mt-3 text-2xl font-semibold leading-tight text-foreground">
+        {office.badge}
+      </div>
+    </div>
+
+    <div className="shrink-0 rounded-full bg-foreground/10 px-4 py-2 text-[10px] uppercase tracking-[0.25em] text-foreground">
+      {office.title}
     </div>
   </div>
 
-  <div className="inline-flex w-fit rounded-2xl bg-foreground/10 px-4 py-2 text-[10px] uppercase tracking-[0.28em] text-foreground">
-    {office.title}
-  </div>
+  <p className="text-sm leading-relaxed text-muted-foreground">
+    {office.location}
+  </p>
 </div>
                     <p className="mt-4 text-muted-foreground leading-relaxed text-sm">{office.location}</p>
                   </div>
