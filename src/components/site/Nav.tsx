@@ -28,10 +28,13 @@ export function Nav() {
           scrolled ? "glass rounded-full mx-4 md:mx-auto px-6 py-3 shadow-soft" : ""
         }`}
       >
-        <Link to="/" className="flex items-center gap-2">
-          <span className="font-display text-2xl tracking-tight">
-            Maison<span className="text-gradient-gold">.</span>Beauté
-          </span>
+        <Link to="/" className="flex items-center gap-3 group">
+          <img
+            src="/logo.svg"
+            alt="Cosmetics Distr"
+            className="h-10 w-auto object-contain transition-transform duration-300 group-hover:-translate-y-0.5"
+          />
+          <span className="sr-only">Cosmetics Distr</span>
         </Link>
 
         <nav className="hidden md:flex items-center gap-8 text-sm" onMouseLeave={() => setMega(false)}>

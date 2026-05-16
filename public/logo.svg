@@ -1,0 +1,18 @@
+<svg width="420" height="120" viewBox="0 0 420 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="gradA" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#F7E8DB" />
+      <stop offset="100%" stop-color="#F1D2C4" />
+    </linearGradient>
+    <linearGradient id="gradB" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#F4DCD4" />
+      <stop offset="100%" stop-color="#ECE2D9" />
+    </linearGradient>
+  </defs>
+  <rect x="8" y="8" width="104" height="104" rx="26" fill="url(#gradA)" />
+  <path d="M32 34C44 24 70 20 82 36C98 58 82 84 54 84C32 84 24 60 32 34Z" fill="url(#gradB)" opacity="0.98" />
+  <path d="M48 44C62 38 82 42 88 60C92 76 78 94 58 92C48 90 44 64 48 44Z" fill="#D9A68F" opacity="0.92" />
+  <path d="M40 62C50 52 68 48 76 60C84 74 72 90 54 88C44 86 38 70 40 62Z" fill="#FFFFFF" opacity="0.18" />
+  <text x="130" y="48" font-family="Cormorant Garamond, serif" font-size="32" fill="#1F1B18" letter-spacing="1.6">COSMETICS</text>
+  <text x="130" y="86" font-family="Inter, sans-serif" font-size="20" fill="#1F1B18" letter-spacing="2.4">DISTR</text>
+</svg>

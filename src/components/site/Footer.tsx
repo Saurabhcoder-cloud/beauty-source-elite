@@ -6,7 +6,7 @@ export function Footer() {
       <div className="mx-auto max-w-7xl px-6 py-16 grid md:grid-cols-4 gap-10">
         <div className="md:col-span-2">
           <div className="font-display text-3xl tracking-tight">
-            Maison<span className="text-gradient-gold">.</span>Beauté
+            Cosmetics<span className="text-gradient-gold"> Distr</span>
           </div>
           <p className="mt-4 text-sm text-ivory/60 max-w-sm leading-relaxed">
             Canadian-headquartered distribution of authentic cosmetics, oral care and healthcare for global wholesale buyers.

@@ -139,8 +139,8 @@ ${form.message || "I'd like to discuss an international wholesale opportunity."}
 
           <div className="relative overflow-hidden rounded-[2.5rem] bg-[radial-gradient(circle_at_top_right,rgba(255,255,255,0.15),transparent_20%),radial-gradient(circle_at_bottom_left,rgba(255,230,215,0.2),transparent_30%)] shadow-luxe">
             <img
-              src="https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?w=1200&q=80"
-              alt="Luxury logistics and warehouse operations"
+              src="https://images.unsplash.com/photo-1498079023802-8a7b8c9cf6b2?w=1200&q=80"
+              alt="Executive logistics and warehouse operations"
               className="h-full w-full object-cover"
             />
             <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-noir/80 to-transparent p-8">
@@ -159,17 +159,19 @@ ${form.message || "I'd like to discuss an international wholesale opportunity."}
               <div className="text-xs uppercase tracking-[0.3em] text-muted-foreground">Office Network</div>
               <div className="mt-4 grid gap-4 md:grid-cols-2">
                 {offices.map((office) => (
-                  <div key={office.title} className="rounded-3xl bg-background/70 p-6 border border-border">
-                    <div className="flex items-center justify-between gap-4">
-                      <div>
-                        <p className="text-xs uppercase tracking-[0.3em] text-muted-foreground">{office.title}</p>
-                        <div className="mt-3 text-xl font-semibold text-foreground">{office.badge}</div>
+                  <div key={office.title} className="rounded-3xl bg-background/70 p-6 border border-border shadow-luxe">
+                    <div className="flex flex-col gap-4">
+                      <div className="flex items-start justify-between gap-3">
+                        <div>
+                          <p className="text-xs uppercase tracking-[0.3em] text-muted-foreground">{office.title}</p>
+                          <div className="mt-3 text-xl font-semibold text-foreground">{office.badge}</div>
+                        </div>
+                        <span className="rounded-full bg-foreground/10 px-3 py-1 text-[10px] uppercase tracking-[0.3em] text-foreground">
+                          {office.badge}
+                        </span>
                       </div>
-                      <div className="rounded-2xl bg-foreground/10 px-3 py-2 text-xs uppercase tracking-[0.3em] text-foreground">
-                        {office.title}
-                      </div>
+                      <p className="text-muted-foreground leading-relaxed text-sm">{office.location}</p>
                     </div>
-                    <p className="mt-4 text-muted-foreground leading-relaxed text-sm">{office.location}</p>
                   </div>
                 ))}
               </div>
