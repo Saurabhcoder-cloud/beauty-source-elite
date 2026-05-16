@@ -1,5 +1,5 @@
 // Central sales contact config — change once, applies to all CTAs
-export const SALES_EMAIL = "sales@maisonbeaute.com";
+export const SALES_EMAIL = "sales@cosmeticsdistr.com";
 export const SALES_WHATSAPP = "18076956835"; // international format, no +
 
 export function buildWhatsAppUrl(message: string) {

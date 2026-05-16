@@ -56,13 +56,13 @@ ${form.notes || "(none)"}`;
           </h2>
           <p className="mt-5 text-muted-foreground leading-relaxed">
             Tell us what you need — brand, volume and destination — and our wholesale desk will reply
-            within one business day with tiered pricing, variable MOQ, lead times and shipping options.
+            within one business day with tiered pricing, MOQ varies depending on the product category and brand requirements, lead times and shipping options.
           </p>
 
           <ul className="mt-8 space-y-3 text-sm">
             {[
               "Tiered pricing from carton to container loads",
-              "MOQ varies depending on product category and brand requirements",
+              "MOQ varies depending on the product category and brand requirements",
               "Authentic stock with full documentation",
               "Delivery in EXW, FOB, CIF or DDP",
               "Reply within 24 business hours",

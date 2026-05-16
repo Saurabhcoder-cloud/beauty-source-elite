@@ -35,125 +35,124 @@ function Counter({ end, suffix = "" }: { end: number; suffix?: string }) {
   );
 }
 
+const metrics = [
+  { label: "Global markets", value: 100, suffix: "+" },
+  { label: "Authorized partners", value: 45, suffix: "+" },
+  { label: "Buyer support", value: 24, suffix: "/7" },
+];
+
 export function About() {
   return (
     <section id="about" className="py-28">
-      <div className="mx-auto max-w-7xl px-6 space-y-20">
+      <div className="mx-auto max-w-7xl px-6 space-y-24">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
-          <div>
-            <p className="text-xs tracking-[0.3em] uppercase text-muted-foreground">Company Overview</p>
-            <h2 className="mt-3 font-display text-4xl md:text-5xl leading-tight">
-              Canadian-based global distribution for <span className="italic text-gradient-gold">cosmetics, oral care and healthcare</span>
+          <div className="space-y-8">
+            <p className="text-xs tracking-[0.3em] uppercase text-muted-foreground">Your Trusted Source</p>
+            <h2 className="font-display text-4xl md:text-5xl leading-tight">
+              Your Trusted Source for Authentic Cosmetics &amp; Skincare Worldwide
             </h2>
             <p className="mt-6 text-muted-foreground leading-relaxed text-lg">
-              Maison Beauté is a Toronto-headquartered sourcing and distribution partner, serving wholesalers, retailers,
-              department stores, online sellers and boutique buyers with direct, authorized products from official distributors.
+              Cosmetics &amp; Skincare Distr is a leading sourcing and distribution company based in Canada, specializing in pre-ordering high-demand beauty,
+              skincare, and cosmetics products directly from official distributors. We provide authentic, premium products to a wide range of clients,
+              including wholesalers, department stores, beauty retailers, and individual consumers worldwide.
             </p>
-            <p className="mt-4 text-muted-foreground leading-relaxed">
-              We operate a verified pre-order sourcing model, supported by a global supply chain that spans sourcing desks,
-              bonded warehousing and freight partners in North America, Europe, the Middle East and Asia.
-            </p>
+            <div className="grid sm:grid-cols-3 gap-4">
+              {metrics.map((metric) => (
+                <div key={metric.label} className="glass rounded-3xl p-6 shadow-luxe">
+                  <div className="text-xs uppercase tracking-[0.3em] text-muted-foreground">{metric.label}</div>
+                  <div className="mt-4 flex items-end gap-2">
+                    <Counter end={metric.value} suffix={metric.suffix} />
+                  </div>
+                </div>
+              ))}
+            </div>
           </div>
 
           <div className="relative">
-            <div className="aspect-[4/5] rounded-3xl overflow-hidden shadow-luxe">
+            <div className="aspect-[4/5] rounded-[2.5rem] overflow-hidden shadow-luxe">
               <img
-                src="https://images.unsplash.com/photo-1495121605193-b116b5b09a41?w=1200&q=80"
-                alt="Warehouse distribution and logistics"
+                src="https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?w=1200&q=80"
+                alt="Premium warehouse and logistics operations"
                 className="h-full w-full object-cover"
                 loading="lazy"
               />
             </div>
-            <div className="absolute -bottom-10 right-0 glass rounded-3xl p-6 shadow-luxe max-w-xs">
-              <div className="text-xs uppercase tracking-widest text-muted-foreground">Trusted by enterprise buyers</div>
-              <div className="font-display text-3xl mt-2">Canada HQ · Global Reach</div>
-              <p className="mt-3 text-sm text-muted-foreground">Verified sourcing for cosmetics, oral care and healthcare brands in 100+ markets.</p>
+            <div className="absolute -bottom-10 left-0 glass rounded-3xl p-6 shadow-luxe max-w-md animate-fade-up">
+              <div className="text-xs uppercase tracking-widest text-muted-foreground">Logistics &amp; Warehousing</div>
+              <div className="font-display text-3xl mt-3">Toronto HQ · Export-ready operations</div>
+              <p className="mt-3 text-sm text-muted-foreground">A premium distribution platform with bonded storage, customs-ready packaging and global freight coordination.</p>
             </div>
           </div>
         </div>
 
-        <div className="grid lg:grid-cols-3 gap-6">
-          <div className="glass rounded-3xl p-10 shadow-luxe">
-            <div className="text-xs tracking-[0.3em] uppercase text-muted-foreground">Mission</div>
-            <h3 className="mt-4 font-display text-3xl">To make premium branded supply chains transparent, compliant and scalable for global retailers.</h3>
-            <p className="mt-4 text-muted-foreground leading-relaxed">
-              We bring order to cross-border distribution with verified partners, authorized sourcing and complete export compliance.
-            </p>
-          </div>
-          <div className="glass rounded-3xl p-10 shadow-luxe">
-            <div className="text-xs tracking-[0.3em] uppercase text-muted-foreground">Vision</div>
-            <h3 className="mt-4 font-display text-3xl">To be the most trusted distributor for authentic beauty and healthcare brands across international markets.</h3>
-            <p className="mt-4 text-muted-foreground leading-relaxed">
-              From Toronto to retail shelves worldwide, our goal is a seamless route from official distributor to buyer.
-            </p>
-          </div>
-          <div className="glass rounded-3xl p-10 shadow-luxe">
-            <div className="text-xs tracking-[0.3em] uppercase text-muted-foreground">Core Values</div>
-            <ul className="mt-4 space-y-3 text-muted-foreground leading-relaxed">
-              <li>Authenticity in every shipment</li>
-              <li>Operational excellence across borders</li>
-              <li>Verified supply chains and documentation</li>
-              <li>Customer-first wholesale partnerships</li>
-            </ul>
-          </div>
-        </div>
-
-        <div className="grid lg:grid-cols-2 gap-16 items-start">
-          <div className="space-y-8">
-            <div>
-              <p className="text-xs tracking-[0.3em] uppercase text-muted-foreground">Global Distribution</p>
-              <h3 className="mt-3 font-display text-3xl">A logistics platform built for global export and partner support.</h3>
+        <div className="grid gap-8 lg:grid-cols-[1.2fr_0.8fr] items-start">
+          <div className="space-y-10">
+            <div className="glass rounded-3xl p-10 shadow-luxe">
+              <div className="text-xs tracking-[0.3em] uppercase text-muted-foreground">Mission</div>
+              <h3 className="mt-4 font-display text-3xl">Our mission is to connect clients with authentic beauty and skincare products, ensuring quality, reliability, and transparency throughout the supply chain.</h3>
               <p className="mt-4 text-muted-foreground leading-relaxed">
-                Our international network includes vetted freight partners, bonded storage and local customs expertise. We support DDP, CIF, FOB and EXW arrangements
-                with fully audited export paperwork and pre-clearance where required.
+                We strive to simplify the sourcing process by working directly with official distributor brands, offering pre-order options, and guaranteeing that all products are 100% genuine and safe.
               </p>
             </div>
 
-            <div>
-              <p className="text-xs tracking-[0.3em] uppercase text-muted-foreground">International Network</p>
-              <h3 className="mt-3 font-display text-3xl">Authorized distributors, brand partners and global sales desks.</h3>
+            <div className="glass rounded-3xl p-10 shadow-luxe">
+              <div className="text-xs tracking-[0.3em] uppercase text-muted-foreground">Vision</div>
+              <h3 className="mt-4 font-display text-3xl">We aim to be a global leader in cosmetics and skincare distribution, expanding our network of trusted brands and clients.</h3>
               <p className="mt-4 text-muted-foreground leading-relaxed">
-                We work with premium cosmetics, oral care and healthcare suppliers through official distribution channels, offering wholesale buyers a secured route to inventory.
+                By continuously sourcing new and in-demand products, we help our clients access premium beauty solutions while maintaining authenticity, affordability, and efficiency.
               </p>
             </div>
           </div>
 
-          <div className="grid grid-cols-2 gap-6">
-            {[
-              { label: "Wholesalers served", value: "Retail, pharmacy, boutiques, ecommerce" },
-              { label: "Primary categories", value: "Cosmetics, skincare, oral care, healthcare" },
-              { label: "Service model", value: "Pre-order sourcing with verified availability" },
-              { label: "Authenticity", value: "100% authorized stock with CoA upon request" },
-            ].map((item) => (
-              <div key={item.label} className="glass rounded-3xl p-6 shadow-luxe">
-                <div className="text-xs uppercase tracking-[0.3em] text-muted-foreground">{item.label}</div>
-                <div className="mt-3 text-xl font-semibold text-foreground">{item.value}</div>
-              </div>
-            ))}
+          <div className="space-y-6">
+            <div className="glass rounded-3xl p-10 shadow-luxe">
+              <div className="text-xs tracking-[0.3em] uppercase text-muted-foreground">What We Do</div>
+              <ul className="mt-6 space-y-4 text-muted-foreground leading-relaxed">
+                <li>Direct sourcing from official distributors</li>
+                <li>Worldwide shipping</li>
+                <li>Authentic product supply</li>
+                <li>Wholesale and retail distribution</li>
+                <li>Verified distribution operations</li>
+              </ul>
+            </div>
+
+            <div className="glass rounded-3xl p-10 shadow-luxe">
+              <div className="text-xs tracking-[0.3em] uppercase text-muted-foreground">Our Values</div>
+              <ul className="mt-6 space-y-4 text-muted-foreground leading-relaxed">
+                <li>Authenticity</li>
+                <li>Reliability</li>
+                <li>Global Reach</li>
+                <li>Client-Centric Service</li>
+                <li>Growth &amp; Innovation</li>
+              </ul>
+            </div>
           </div>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-6">
-          <div className="glass rounded-3xl p-8 shadow-luxe">
-            <div className="text-xs uppercase tracking-[0.3em] text-muted-foreground">Why Choose Us</div>
+        <div className="grid lg:grid-cols-2 gap-8 items-center">
+          <div className="glass rounded-3xl p-10 shadow-luxe">
+            <div className="text-xs tracking-[0.3em] uppercase text-muted-foreground">Why Choose Us</div>
+            <h3 className="mt-4 font-display text-3xl">Premium sourcing with trusted distributor relationships and full-service global support.</h3>
             <ul className="mt-6 space-y-4 text-muted-foreground leading-relaxed">
-              <li>Direct sourcing from official distributors and authorized vendors.</li>
-              <li>Verified supply chain with batch traceability and export documentation.</li>
-              <li>Flexible MOQ guidance per category and brand requirements.</li>
-              <li>End-to-end logistics coordination for global wholesale orders.</li>
+              <li>Direct Distributor Connections</li>
+              <li>Pre-Order Model</li>
+              <li>Worldwide Shipping</li>
+              <li>Trusted Distribution Experience</li>
+              <li>Comprehensive Product Range</li>
             </ul>
           </div>
-          <div className="glass rounded-3xl p-8 shadow-luxe">
-            <div className="text-xs uppercase tracking-[0.3em] text-muted-foreground">Pre-order Sourcing</div>
-            <p className="mt-6 text-muted-foreground leading-relaxed">
-              Premium beauty references are secured in advance from our partner networks, ensuring availability and verified quality before shipment.
-            </p>
-          </div>
-          <div className="glass rounded-3xl p-8 shadow-luxe">
-            <div className="text-xs uppercase tracking-[0.3em] text-muted-foreground">Verified Distribution Experience</div>
-            <p className="mt-6 text-muted-foreground leading-relaxed">
-              Our team combines sourcing expertise with customs, warehousing and delivery capabilities for a seamless international wholesale experience.
-            </p>
+
+          <div className="space-y-6">
+            <div className="glass rounded-3xl p-10 shadow-luxe">
+              <div className="text-xs tracking-[0.3em] uppercase text-muted-foreground">Global Distribution</div>
+              <p className="mt-4 text-muted-foreground leading-relaxed">
+                Our commercial logistics platform supports export-ready packaging, customs clearance and bonded warehousing across key trade corridors. We connect Toronto procurement with verified delivery networks in Europe, Asia and the Americas.
+              </p>
+            </div>
+            <div className="glass rounded-3xl p-10 shadow-luxe">
+              <div className="text-xs tracking-[0.3em] uppercase text-muted-foreground">Our Goal</div>
+              <h3 className="mt-4 font-display text-3xl">Expand globally while simplifying authentic beauty sourcing for wholesalers, retailers, and consumers.</h3>
+            </div>
           </div>
         </div>
       </div>

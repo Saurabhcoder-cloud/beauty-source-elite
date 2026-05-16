@@ -33,7 +33,7 @@ I'd like to request wholesale pricing and availability for the following product
 • Brand: ${product.brand}
 • Product: ${product.t}
 ${product.size ? `• Size: ${product.size}\n` : ""}
-Please share your MOQ requirements, tiered pricing, lead time and shipping options.
+Please share your MOQ requirements — MOQ varies depending on the product category and brand requirements, along with tiered pricing, lead time and shipping options.
 
 Thank you.`;
 
@@ -89,7 +89,7 @@ Thank you.`;
             </div>
             <div>
               <dt className="text-xs uppercase tracking-widest text-muted-foreground">MOQ</dt>
-              <dd className="mt-1">Varies by product category and brand</dd>
+              <dd className="mt-1">MOQ varies depending on the product category and brand requirements.</dd>
             </div>
             <div>
               <dt className="text-xs uppercase tracking-widest text-muted-foreground">Pricing</dt>
