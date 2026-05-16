@@ -75,6 +75,11 @@ export function Nav() {
             )}
           </div>
 
+          <Link to="/services" className="text-foreground/70 hover:text-foreground transition-colors relative group">
+            Services
+            <span className="absolute -bottom-1 left-0 h-px w-0 bg-accent transition-all duration-300 group-hover:w-full" />
+          </Link>
+
           {sections.map((l) => (
             <a key={l.href} href={l.href} className="text-foreground/70 hover:text-foreground transition-colors relative group">
               {l.label}
@@ -103,6 +108,7 @@ export function Nav() {
               </Link>
             ))}
             <div className="px-2 pt-3 pb-2 text-[10px] uppercase tracking-widest text-muted-foreground">More</div>
+            <Link to="/services" onClick={() => setOpen(false)} className="py-2 px-2 rounded-md hover:bg-muted">Services</Link>
             {sections.map((l) => (
               <a key={l.href} href={l.href} onClick={() => setOpen(false)} className="py-2 px-2 rounded-md hover:bg-muted">{l.label}</a>
             ))}

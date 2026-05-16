@@ -1,10 +1,10 @@
 const pillars = [
-  { t: "Supplier Verification", d: "Every brand source authorized at manufacturer or master-distributor level. Documented chain of custody.", icon: "M9 12l2 2 4-4M21 12a9 9 0 11-18 0 9 9 0 0118 0z" },
-  { t: "Authenticity Assurance", d: "100% original products with batch & serial traceability, CoA available on demand.", icon: "M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" },
-  { t: "Logistics Network", d: "EU bonded warehouses, GDP-certified carriers, validated cold-chain 2–8°C lanes worldwide.", icon: "M3 7h13l5 5v5h-2a2 2 0 11-4 0H9a2 2 0 11-4 0H3V7z" },
-  { t: "Global Sourcing", d: "Procurement desks in Paris, Dubai and Singapore. Direct lines to 60+ Tier-1 manufacturers.", icon: "M3.6 9h16.8M3.6 15h16.8M11.5 3a17 17 0 000 18M12.5 3a17 17 0 010 18" },
-  { t: "Wholesale Fulfillment", d: "From carton to 40ft container. Multilingual packaging, neutral export documentation, DDP terms.", icon: "M20 13V6a2 2 0 00-2-2H6a2 2 0 00-2 2v7m16 0l-2 7H6l-2-7m16 0H4" },
-  { t: "Regulatory Coverage", d: "CE, FDA, CPP, FSC, Halal & local registration support for healthcare and dermo-cosmetic exports.", icon: "M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" },
+  { t: "Supplier Verification", d: "Authorized products sourced through official distributor contracts and audited supply chains.", icon: "M9 12l2 2 4-4M21 12a9 9 0 11-18 0 9 9 0 0118 0z" },
+  { t: "Authenticity Assurance", d: "Full batch traceability, certificates of authenticity and compliance documentation on request.", icon: "M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" },
+  { t: "Logistics Network", d: "Toronto-based export coordination paired with EU bonded warehousing and DDP-ready freight partners.", icon: "M3 7h13l5 5v5h-2a2 2 0 11-4 0H9a2 2 0 11-4 0H3V7z" },
+  { t: "Global Sourcing", d: "Procurement desks across Canada, Europe, Middle East and Asia with direct access to Tier-1 manufacturers.", icon: "M3.6 9h16.8M3.6 15h16.8M11.5 3a17 17 0 000 18M12.5 3a17 17 0 010 18" },
+  { t: "Wholesale Fulfillment", d: "From carton to 40ft container. Multilingual packaging, neutral export documentation and custom clearance support.", icon: "M20 13V6a2 2 0 00-2-2H6a2 2 0 00-2 2v7m16 0l-2 7H6l-2-7m16 0H4" },
+  { t: "Regulatory Coverage", d: "CE, FDA, CPP and destination-specific compliance for cosmetics, oral care and healthcare shipments.", icon: "M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" },
 ];
 
 export function EnterpriseTrust() {

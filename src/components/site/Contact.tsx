@@ -29,7 +29,7 @@ export function Contact() {
   const buildBody = () =>
 `Hello Maison Beauté,
 
-${form.message || "I'd like to discuss a wholesale opportunity."}
+${form.message || "I'd like to discuss an international wholesale opportunity."}
 
 — Name: ${form.name}
 — Company: ${form.company}
@@ -62,16 +62,16 @@ ${form.message || "I'd like to discuss a wholesale opportunity."}
           </p>
 
           <div className="mt-10 space-y-5">
-            <ContactRow icon="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0118 0z M12 7v5l3 2" label="Headquarters" value="14 Rue Saint-Honoré, 75001 Paris, France" />
+            <ContactRow icon="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0118 0z M12 7v5l3 2" label="Headquarters" value="Toronto, Ontario, Canada" />
             <ContactRow icon="M3 8l9 6 9-6M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" label="Email" value={SALES_EMAIL} href={`mailto:${SALES_EMAIL}`} />
-            <ContactRow icon="M20 15.5A8.38 8.38 0 0117 17a8.5 8.5 0 01-7-7 8.38 8.38 0 011.5-3M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6A19.79 19.79 0 012.12 4.18 2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z" label="WhatsApp" value="+33 1 23 45 67 89" href={buildWhatsAppUrl("Hello Maison Beauté, I'd like to discuss a wholesale opportunity.")} />
-            <ContactRow icon="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" label="Hours" value="Mon–Fri · 9:00–18:00 CET" />
+            <ContactRow icon="M20 15.5A8.38 8.38 0 0117 17a8.5 8.5 0 01-7-7 8.38 8.38 0 011.5-3M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6A19.79 19.79 0 012.12 4.18 2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z" label="WhatsApp" value="+1 807 695 6835" href={buildWhatsAppUrl("Hello Maison Beauté, I'd like to discuss an international wholesale opportunity.")} />
+            <ContactRow icon="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" label="Hours" value="Mon–Fri · 09:00–17:00 ET" />
           </div>
 
           <div className="mt-10 rounded-3xl overflow-hidden border border-border h-56 shadow-soft">
             <iframe
               title="Maison Beauté headquarters"
-              src="https://www.openstreetmap.org/export/embed.html?bbox=2.32%2C48.85%2C2.36%2C48.87&layer=mapnik"
+              src="https://www.openstreetmap.org/export/embed.html?bbox=-79.42%2C43.64%2C-79.36%2C43.68&layer=mapnik"
               className="w-full h-full"
               loading="lazy"
             />

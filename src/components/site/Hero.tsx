@@ -12,18 +12,18 @@ export function Hero() {
         <div className="lg:col-span-7 animate-fade-up">
           <div className="inline-flex items-center gap-2 glass rounded-full px-4 py-1.5 text-xs tracking-widest uppercase text-foreground/70 mb-8">
             <span className="h-1.5 w-1.5 rounded-full bg-accent animate-pulse" />
-            Trusted by 1,200+ Wholesale Buyers Worldwide
+            Canadian HQ · Global wholesale distribution
           </div>
           <h1 className="font-display text-5xl md:text-6xl lg:text-7xl leading-[1.05] tracking-tight">
-            Authentic Luxury
+            Authentic luxury
             <br />
-            <span className="italic text-gradient-gold">Cosmetics & Skincare</span>
+            <span className="italic text-gradient-gold">cosmetics, oral care</span>
             <br />
-            Distribution Worldwide
+            and healthcare distribution
           </h1>
           <p className="mt-8 text-lg text-muted-foreground max-w-xl leading-relaxed">
-            Sourced directly from European labs and authorized suppliers. Verified, traceable, and
-            delivered to retailers, pharmacies and beauty chains in 80+ countries.
+            Sourced through licensed distributor channels, verified for authenticity and ready to ship under
+            complete export documentation to retailers, pharmacies and distributors in 100+ markets.
           </p>
           <div className="mt-10 flex flex-wrap gap-4">
             <a

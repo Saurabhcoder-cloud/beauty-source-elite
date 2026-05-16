@@ -1,10 +1,10 @@
 const features = [
-  { t: "100% Authentic", d: "Every batch traceable to its authorized source.", icon: "M12 2l3 7h7l-5.5 4 2 7L12 16l-6.5 4 2-7L2 9h7z" },
-  { t: "Verified Suppliers", d: "Direct contracts with European manufacturers.", icon: "M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z" },
-  { t: "Worldwide Shipping", d: "Air, sea & express to 80+ countries.", icon: "M3.6 9h16.8M3.6 15h16.8M11 3a17 17 0 000 18M13 3a17 17 0 010 18M21 12a9 9 0 11-18 0 9 9 0 0118 0z" },
-  { t: "Quality Assurance", d: "Lab-tested, temperature-controlled storage.", icon: "M9 12l2 2 4-4m5.6-2.6A9 9 0 1112 3a9 9 0 018.6 6.4z" },
-  { t: "Fast Fulfillment", d: "Average dispatch within 48 hours.", icon: "M13 10V3L4 14h7v7l9-11h-7z" },
-  { t: "Wholesale Pricing", d: "Tiered margins from MOQ to container loads.", icon: "M12 8c-1.66 0-3 .9-3 2s1.34 2 3 2 3 .9 3 2-1.34 2-3 2m0-8V6m0 12v-2M8 12h.01M16 12h.01" },
+  { t: "Official Distributor Network", d: "Direct relationships with authorized suppliers and master distributors.", icon: "M12 2l3 7h7l-5.5 4 2 7L12 16l-6.5 4 2-7L2 9h7z" },
+  { t: "Global Product Sourcing", d: "Premium cosmetics, oral care and healthcare sourced across verified supply chains.", icon: "M3.6 9h16.8M3.6 15h16.8M11 3a17 17 0 000 18M13 3a17 17 0 010 18M21 12a9 9 0 11-18 0 9 9 0 0118 0z" },
+  { t: "Pre-order Fulfillment", d: "Secure pre-order sourcing for hard-to-find launches and seasonal allocations.", icon: "M9 12l2 2 4-4M21 12a9 9 0 11-18 0 9 9 0 0118 0z" },
+  { t: "Logistics Coordination", d: "Customs-ready export documentation, bonded warehousing and freight planning.", icon: "M3 7h13l5 5v5h-2a2 2 0 11-4 0H9a2 2 0 11-4 0H3V7z" },
+  { t: "Retail & Wholesale Support", d: "Dedicated account service for department stores, boutiques, ecommerce and pharmacy chains.", icon: "M9 12l2 2 4-4m5.6-2.6A9 9 0 1112 3a9 9 0 018.6 6.4z" },
+  { t: "Authenticity Guarantee", d: "Every shipment arrives with full traceability and quality verification.", icon: "M9 12l2 2 4-4M21 12a9 9 0 11-18 0 9 9 0 0118 0z" },
 ];
 
 export function WhyUs() {

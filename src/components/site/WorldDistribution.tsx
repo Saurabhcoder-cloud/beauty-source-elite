@@ -30,7 +30,7 @@ export function WorldDistribution() {
             Shipped to <span className="italic text-gradient-gold">100+ countries</span>
           </h2>
           <p className="mt-5 text-ivory/70">
-            A vertically-integrated logistics network spanning EU bonded warehouses, GDP-certified couriers and DDP-ready freight forwarders.
+            A Canadian-managed global logistics network with Toronto HQ, bonded carrier partners and DDP-ready freight lanes for premium wholesale imports.
           </p>
         </div>
 
@@ -59,7 +59,7 @@ export function WorldDistribution() {
             </svg>
           </div>
           <div className="absolute bottom-6 left-6 right-6 flex justify-between text-[10px] uppercase tracking-widest text-ivory/50">
-            <span>Paris HQ</span>
+            <span>Toronto HQ</span>
             <span>Real-time freight network</span>
           </div>
         </div>
