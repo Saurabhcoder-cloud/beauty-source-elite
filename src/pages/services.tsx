@@ -1,5 +1,6 @@
 import { Nav } from "@/components/site/Nav";
 import { Footer } from "@/components/site/Footer";
+import { PageFrame } from "@/components/site/PageFrame";
 import { buildWhatsAppUrl } from "@/lib/sales";
 
 const services = [
@@ -60,62 +61,94 @@ const steps = [
 
 export default function Services() {
   return (
-    <main className="bg-background text-foreground overflow-x-clip">
+    <PageFrame>
       <Nav />
-      <section className="relative overflow-hidden pb-28 pt-32">
-        <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_20%_20%,rgba(255,216,188,0.24),transparent_30%)]" />
-        <div className="relative mx-auto max-w-7xl px-6">
-          <div className="grid lg:grid-cols-2 gap-16 items-center">
-            <div>
-              <p className="text-xs tracking-[0.3em] uppercase text-muted-foreground">Services</p>
-              <h1 className="mt-3 font-display text-5xl md:text-6xl leading-tight">
-                Strategic sourcing and logistics for international wholesale buyers
-              </h1>
-              <p className="mt-8 text-lg text-muted-foreground max-w-2xl leading-relaxed">
-                Maison Beauté delivers a premium end-to-end services platform for authorized cosmetics, oral care and healthcare distribution.
-                From procurement to customs clearance, our Canadian-based team supports global buyers with enterprise-grade accuracy.
-              </p>
-              <div className="mt-10 flex flex-wrap gap-4">
-                <a
-                  href={buildWhatsAppUrl("Hello Maison Beauté, I would like to discuss your services and wholesale supply options.")}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 rounded-full bg-[#25D366] text-white px-6 py-3 text-sm font-medium hover:bg-[#1ebe57] transition"
-                >
-                  Contact Sales
-                </a>
-                <a href="#service-process" className="inline-flex items-center gap-2 rounded-full border border-foreground/20 bg-background/40 px-6 py-3 text-sm font-medium hover:border-foreground/60 transition">
-                  Service Process
-                </a>
-              </div>
+      <section className="relative overflow-hidden pb-32 pt-32">
+        <div className="pointer-events-none absolute inset-0">
+          <div className="absolute -top-40 left-0 h-[520px] w-[520px] rounded-full bg-blush/25 blur-3xl animate-glow" />
+          <div className="absolute top-20 right-0 h-[420px] w-[420px] rounded-full bg-champagne/25 blur-3xl animate-glow" />
+          <div className="absolute inset-x-0 top-[35%] h-px bg-gradient-to-r from-transparent via-rose-gold/30 to-transparent opacity-60" />
+        </div>
+
+        <div className="relative mx-auto max-w-7xl px-6 grid gap-12 lg:grid-cols-[1.1fr_0.9fr] items-center">
+          <div className="space-y-8">
+            <div className="inline-flex items-center gap-3 glass rounded-full px-4 py-1.5 text-xs uppercase tracking-[0.3em] text-foreground/70">
+              <span className="h-2 w-2 rounded-full bg-accent animate-pulse" />
+              Enterprise logistics for premium wholesale sourcing.
             </div>
-            <div className="glass rounded-3xl p-8 shadow-luxe">
-              <div className="text-xs uppercase tracking-[0.3em] text-muted-foreground">Trusted capabilities</div>
-              <div className="mt-8 space-y-6">
-                <div className="rounded-3xl bg-background/70 p-6 border border-border">
-                  <div className="font-display text-2xl">100% Authentic</div>
-                  <p className="mt-3 text-muted-foreground text-sm">
-                    Each shipment is confirmed against authorized distribution contracts and arrives with full traceability.
-                  </p>
-                </div>
-                <div className="rounded-3xl bg-background/70 p-6 border border-border">
-                  <div className="font-display text-2xl">Verified logistics</div>
-                  <p className="mt-3 text-muted-foreground text-sm">
-                    Pre-booked freight, customs-ready paperwork and bundled export services for seamless cross-border delivery.
-                  </p>
-                </div>
-              </div>
+            <h1 className="font-display text-5xl md:text-6xl lg:text-7xl leading-[1.02] tracking-tight">
+              Strategic sourcing, logistics and premiere commercial distribution for global buyers.
+            </h1>
+            <p className="max-w-2xl text-lg text-muted-foreground leading-relaxed">
+              Maison Beauté delivers an immersive product sourcing experience for authorized cosmetics, oral care and healthcare brands — with vetted suppliers, export-ready shipping and enterprise-grade account service.
+            </p>
+            <div className="mt-10 flex flex-wrap gap-4">
+              <a
+                href={buildWhatsAppUrl("Hello Maison Beauté, I would like to discuss your services and wholesale supply options.")}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group inline-flex items-center gap-2 rounded-full bg-foreground text-background px-7 py-3.5 text-sm font-medium hover:bg-accent transition-all duration-300 shadow-luxe"
+              >
+                Contact Sales
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="transition-transform group-hover:translate-x-1">
+                  <path d="M5 12h14M13 5l7 7-7 7" />
+                </svg>
+              </a>
+              <a href="#service-process" className="inline-flex items-center gap-2 rounded-full border border-foreground/20 bg-background/40 backdrop-blur-md px-7 py-3.5 text-sm font-medium hover:border-foreground/60 transition-all shadow-luxe">
+                Service Process
+              </a>
             </div>
           </div>
 
-          <div className="mt-24">
-            <div className="text-center max-w-2xl mx-auto mb-12">
-              <p className="text-xs tracking-[0.3em] uppercase text-muted-foreground">Service portfolio</p>
-              <h2 className="mt-3 font-display text-4xl md:text-5xl">A full suite of wholesale distribution services</h2>
+          <div className="relative hidden lg:block">
+            <div className="aspect-[4/5] overflow-hidden rounded-[2.5rem] shadow-luxe border border-border bg-card">
+              <img
+                src="https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?w=1200&q=80"
+                alt="Premium logistics and sourcing operations"
+                className="h-full w-full object-cover"
+                loading="lazy"
+              />
             </div>
-            <div className="grid lg:grid-cols-3 gap-6">
+            <div className="glass rounded-3xl p-6 shadow-luxe absolute -bottom-16 left-0 max-w-md animate-fade-up">
+              <div className="text-xs uppercase tracking-[0.3em] text-muted-foreground">Sourcing advantage</div>
+              <div className="mt-3 font-display text-3xl">Verified inventory across 80+ markets</div>
+              <p className="mt-3 text-sm text-muted-foreground leading-relaxed">
+                A digital-first sourcing desk with premium distributor relationships and a luxury-level fulfilment mindset.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="relative mx-auto max-w-7xl px-6">
+        <div className="glass rounded-3xl p-8 shadow-luxe border border-border grid gap-4 sm:grid-cols-3">
+          {[
+            { label: "Premium customer care", value: "24/7" },
+            { label: "Global freight partners", value: "40+" },
+            { label: "Verified product lines", value: "100%" },
+          ].map((item) => (
+            <div key={item.label} className="space-y-3">
+              <div className="text-3xl font-display">{item.value}</div>
+              <div className="text-xs uppercase tracking-[0.3em] text-muted-foreground">{item.label}</div>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      <section className="relative overflow-hidden pb-28">
+        <div className="pointer-events-none absolute inset-x-0 top-0 h-24 bg-gradient-to-b from-rose-gold/15 to-transparent" />
+        <div className="relative mx-auto max-w-7xl px-6 mt-24">
+          <div className="grid lg:grid-cols-2 gap-16 items-center">
+            <div className="space-y-8">
+              <div className="text-xs tracking-[0.3em] uppercase text-muted-foreground">Trusted capabilities</div>
+              <h2 className="font-display text-4xl md:text-5xl leading-tight">A premium services portfolio for discerning wholesale buyers.</h2>
+              <p className="text-lg text-muted-foreground leading-relaxed">
+                From authorized sourcing to customs-ready logistics, every service is crafted for enterprise buyers who require compliance, speed and luxury experience.
+              </p>
+            </div>
+            <div className="grid gap-6">
               {services.map((service) => (
-                <div key={service.title} className="glass rounded-3xl p-10 shadow-luxe hover:-translate-y-1 transition-transform">
+                <div key={service.title} className="glass rounded-3xl p-10 shadow-luxe hover-lift transition-transform">
                   <div className="h-12 w-12 rounded-2xl bg-foreground text-background flex items-center justify-center mb-5">
                     <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d={service.icon} /></svg>
                   </div>
@@ -125,48 +158,10 @@ export default function Services() {
               ))}
             </div>
           </div>
-
-          <div id="service-process" className="mt-24">
-            <div className="text-center max-w-2xl mx-auto mb-12">
-              <p className="text-xs tracking-[0.3em] uppercase text-muted-foreground">Process Timeline</p>
-              <h2 className="mt-3 font-display text-4xl md:text-5xl">How our distribution service works</h2>
-            </div>
-            <div className="grid gap-6">
-              {steps.map((step, index) => (
-                <div key={step.title} className="glass rounded-3xl p-8 shadow-luxe grid md:grid-cols-[auto_1fr] gap-6 items-start">
-                  <div className="flex h-14 w-14 items-center justify-center rounded-full bg-accent text-background font-display text-xl">{index + 1}</div>
-                  <div>
-                    <h3 className="font-display text-2xl">{step.title}</h3>
-                    <p className="mt-3 text-muted-foreground leading-relaxed">{step.description}</p>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-
-          <div className="mt-24 grid lg:grid-cols-2 gap-10 items-center rounded-3xl bg-gradient-blush/10 p-12 shadow-luxe">
-            <div>
-              <p className="text-xs tracking-[0.3em] uppercase text-muted-foreground">Premium support</p>
-              <h2 className="mt-3 font-display text-4xl leading-tight">Corporate-grade support for international buyers</h2>
-              <p className="mt-6 text-muted-foreground leading-relaxed">
-                Our team is structured to support retail and wholesale buyers with dedicated account management,
-                logistics coordination and full documentation for customs clearance.
-              </p>
-            </div>
-            <div className="grid gap-4">
-              {[
-                "Dedicated account service",
-                "Pre-export quality review",
-                "Global freight coordination",
-                "Dual-language documentation support",
-              ].map((item) => (
-                <div key={item} className="glass rounded-3xl p-6 border border-border">{item}</div>
-              ))}
-            </div>
-          </div>
         </div>
       </section>
+
       <Footer />
-    </main>
+    </PageFrame>
   );
 }
