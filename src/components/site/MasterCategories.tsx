@@ -1,4 +1,4 @@
-import { Link } from "@tanstack/react-router";
+import { Link } from "react-router-dom";
 import { CATEGORY_LIST } from "@/lib/categories";
 
 export function MasterCategories() {

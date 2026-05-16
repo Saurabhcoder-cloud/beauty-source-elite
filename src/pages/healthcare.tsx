@@ -1,4 +1,3 @@
-import { createFileRoute } from "@tanstack/react-router";
 import { CATEGORIES } from "@/lib/categories";
 import { Nav } from "@/components/site/Nav";
 import { Footer } from "@/components/site/Footer";
@@ -8,24 +7,8 @@ import { CategoryProducts } from "@/components/site/category/CategoryProducts";
 import { CategoryCTA } from "@/components/site/category/CategoryCTA";
 
 const cat = CATEGORIES.healthcare;
-const TITLE = "Healthcare Wholesale & Export — Pfizer, Bayer, Roche | Maison Beauté";
-const DESC = "GDP-certified international distribution of OTC pharmaceuticals, medical devices and consumer healthcare. 30+ manufacturers, 100+ export markets.";
 
-export const Route = createFileRoute("/healthcare")({
-  component: Page,
-  head: () => ({
-    meta: [
-      { title: TITLE },
-      { name: "description", content: DESC },
-      { property: "og:title", content: TITLE },
-      { property: "og:description", content: DESC },
-      { property: "og:image", content: cat.heroImg },
-    ],
-    links: [{ rel: "canonical", href: "/healthcare" }],
-  }),
-});
-
-function Page() {
+export default function Healthcare() {
   return (
     <main className={`bg-background text-foreground overflow-x-clip ${cat.themeClass}`}>
       <Nav />

@@ -1,4 +1,3 @@
-import { createFileRoute } from "@tanstack/react-router";
 import { CATEGORIES } from "@/lib/categories";
 import { Nav } from "@/components/site/Nav";
 import { Footer } from "@/components/site/Footer";
@@ -8,24 +7,8 @@ import { CategoryProducts } from "@/components/site/category/CategoryProducts";
 import { CategoryCTA } from "@/components/site/category/CategoryCTA";
 
 const cat = CATEGORIES["oral-care"];
-const TITLE = "Oral Care Wholesale — Colgate, Oral-B, Marvis | Maison Beauté";
-const DESC = "Premium oral care wholesale: Colgate, Oral-B, Sensodyne, Marvis, Curaprox, Listerine and 30+ brands for pharmacies, dental clinics and retail chains.";
 
-export const Route = createFileRoute("/oral-care")({
-  component: Page,
-  head: () => ({
-    meta: [
-      { title: TITLE },
-      { name: "description", content: DESC },
-      { property: "og:title", content: TITLE },
-      { property: "og:description", content: DESC },
-      { property: "og:image", content: cat.heroImg },
-    ],
-    links: [{ rel: "canonical", href: "/oral-care" }],
-  }),
-});
-
-function Page() {
+export default function OralCare() {
   return (
     <main className={`bg-background text-foreground overflow-x-clip ${cat.themeClass}`}>
       {/* Floating bubbles */}
