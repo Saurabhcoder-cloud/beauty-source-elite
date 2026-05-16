@@ -159,30 +159,31 @@ ${form.message || "I'd like to discuss an international wholesale opportunity."}
               <div className="text-xs uppercase tracking-[0.3em] text-muted-foreground">Office Network</div>
               <div className="mt-4 grid gap-4 md:grid-cols-2">
                 {offices.map((office) => (
-                  <div key={office.title} className="rounded-3xl bg-background/70 p-6 border border-border">
-                    <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-5">
-  <div className="flex flex-col gap-4">
-  <div className="flex flex-col gap-3">
-    <div>
-      <div className="inline-flex w-fit rounded-full bg-foreground/10 px-4 py-2 text-[10px] uppercase tracking-[0.25em] text-foreground">
-  {office.title}
-</div>
+                  <div
+                    key={office.title}
+                    className="rounded-3xl bg-background/70 p-6 border border-border"
+                  >
+                    <div className="flex flex-col gap-5">
+                      <div className="flex items-start justify-between gap-4">
+                        <div>
+                          <p className="text-xs uppercase tracking-[0.3em] text-muted-foreground">
+                            {office.title}
+                          </p>
 
-      <div className="mt-3 text-2xl font-semibold leading-tight text-foreground">
-        {office.badge}
-      </div>
-    </div>
+                          <div className="mt-3 text-2xl font-semibold leading-tight text-foreground">
+                            {office.badge}
+                          </div>
+                        </div>
 
-    <div className="shrink-0 rounded-full bg-foreground/10 px-4 py-2 text-[10px] uppercase tracking-[0.25em] text-foreground">
-      {office.title}
-    </div>
-  </div>
+                        <div className="rounded-full bg-foreground/10 px-4 py-2 text-[10px] uppercase tracking-[0.25em] text-foreground whitespace-nowrap">
+                          {office.title}
+                        </div>
+                      </div>
 
-  <p className="text-sm leading-relaxed text-muted-foreground">
-    {office.location}
-  </p>
-</div>
-                    <p className="mt-4 text-muted-foreground leading-relaxed text-sm">{office.location}</p>
+                      <p className="text-sm leading-relaxed text-muted-foreground">
+                        {office.location}
+                      </p>
+                    </div>
                   </div>
                 ))}
               </div>
