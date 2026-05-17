@@ -73,7 +73,7 @@ export function Hero() {
             style={{ animationDelay: "1s" }}
           />
           <FloatingCard
-            src="https://www.instagram.com/p/DNQtD1dyT3Q/"
+            src="https://img.magnific.com/free-photo/front-view-fragrance-brown-designed-with-black-cap-white-desk_140725-11623.jpg"
             title="Premium Fragrance"
             sub="Signature · 100ml"
             className="absolute bottom-0 right-0 w-60 animate-float"
