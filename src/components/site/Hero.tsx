@@ -73,7 +73,7 @@ export function Hero() {
             style={{ animationDelay: "1s" }}
           />
           <FloatingCard
-            src="https://images.unsplash.com/photo-1522335789203-aaa1f15a5045?w=900&q=80"
+            src="https://www.instagram.com/p/DNQtD1dyT3Q/"
             title="Premium Fragrance"
             sub="Signature · 100ml"
             className="absolute bottom-0 right-0 w-60 animate-float"
