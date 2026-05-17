@@ -8,17 +8,17 @@ export default function FAQPage() {
     <PageFrame>
       <Nav />
 
-      <section className="relative overflow-hidden pt-32 pb-24">
+      <section className="relative overflow-hidden pt-24 sm:pt-32 pb-20 sm:pb-24">
         <div className="pointer-events-none absolute inset-0">
           <div className="absolute -top-32 left-1/2 h-[520px] w-[520px] rounded-full bg-champagne/15 blur-3xl animate-glow" />
           <div className="absolute bottom-0 right-0 h-[420px] w-[420px] rounded-full bg-blush/15 blur-3xl animate-glow" />
           <div className="absolute inset-x-0 top-[35%] h-px bg-gradient-to-r from-transparent via-rose-gold/40 to-transparent opacity-60" />
         </div>
 
-        <div className="relative mx-auto max-w-7xl px-6 grid gap-12 lg:grid-cols-[1.1fr_0.9fr] items-end">
+        <div className="relative mx-auto max-w-7xl px-6 grid gap-10 sm:gap-12 lg:grid-cols-[1.1fr_0.9fr] items-end">
           <div className="space-y-8">
             <p className="text-xs tracking-[0.3em] uppercase text-muted-foreground">Frequently Asked</p>
-            <h1 className="font-display text-5xl md:text-6xl lg:text-7xl leading-[1.02] tracking-tight">
+            <h1 className="font-display text-4xl sm:text-5xl md:text-6xl lg:text-7xl leading-[1.02] tracking-tight">
               The premium sourcing, fulfillment and luxury distribution intelligence you need.
             </h1>
             <p className="max-w-2xl text-lg text-muted-foreground leading-relaxed">
@@ -40,7 +40,7 @@ export default function FAQPage() {
 
       <FAQ />
 
-      <section className="relative py-20">
+      <section className="relative py-16 sm:py-20">
         <div className="glass rounded-3xl p-10 shadow-luxe border border-border mx-auto max-w-5xl">
           <div className="grid gap-8 lg:grid-cols-[1.15fr_0.85fr] items-center">
             <div>

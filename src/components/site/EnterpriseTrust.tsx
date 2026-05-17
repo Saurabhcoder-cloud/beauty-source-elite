@@ -9,7 +9,7 @@ const pillars = [
 
 export function EnterpriseTrust() {
   return (
-    <section className="py-28">
+    <section className="py-20 sm:py-24 lg:py-28">
       <div className="mx-auto max-w-7xl px-6">
         <div className="text-center max-w-2xl mx-auto mb-16">
           <p className="text-xs tracking-[0.3em] uppercase text-muted-foreground">Enterprise Trust</p>

@@ -21,7 +21,7 @@ const dots = [
 
 export function WorldDistribution() {
   return (
-    <section id="world" className="py-28 bg-gradient-noir text-ivory relative overflow-hidden">
+    <section id="world" className="py-20 sm:py-24 lg:py-28 bg-gradient-noir text-ivory relative overflow-hidden">
       <div className="absolute inset-0 opacity-30" style={{ background: "radial-gradient(ellipse at 50% 0%, oklch(0.74 0.10 35 / 0.6), transparent 60%)" }} />
       <div className="relative mx-auto max-w-7xl px-6">
         <div className="text-center max-w-2xl mx-auto mb-16">

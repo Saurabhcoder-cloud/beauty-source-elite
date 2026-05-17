@@ -3,7 +3,7 @@ import { CATEGORY_LIST } from "@/lib/categories";
 
 export function MasterCategories() {
   return (
-    <section id="master" className="py-28">
+    <section id="master" className="py-20 sm:py-24 lg:py-28">
       <div className="mx-auto max-w-7xl px-6">
         <div className="flex items-end justify-between flex-wrap gap-6 mb-14">
           <div className="max-w-xl">
@@ -22,7 +22,7 @@ export function MasterCategories() {
             <Link
               key={c.key}
               to={c.slug}
-              className="group relative overflow-hidden rounded-3xl aspect-[3/4] hover-lift block animate-fade-up"
+              className="group relative overflow-hidden rounded-3xl aspect-[5/6] sm:aspect-[3/4] hover-lift block animate-fade-up"
               style={{ animationDelay: `${i * 120}ms` }}
             >
               <img src={c.heroImg} alt={c.name} className="absolute inset-0 h-full w-full object-cover transition-transform duration-[1.2s] group-hover:scale-110" loading="lazy" />

@@ -9,7 +9,7 @@ const cats = [
 
 export function Categories() {
   return (
-    <section id="categories" className="py-28">
+    <section id="categories" className="py-20 sm:py-24 lg:py-28">
       <div className="mx-auto max-w-7xl px-6">
         <div className="flex items-end justify-between flex-wrap gap-6 mb-14">
           <div className="max-w-xl">
@@ -23,12 +23,12 @@ export function Categories() {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
           {cats.map((c, i) => (
             <a
               href="#contact"
               key={c.t}
-              className="product-card group relative overflow-hidden rounded-3xl aspect-[4/5] hover-lift block"
+              className="product-card group relative overflow-hidden rounded-3xl aspect-[5/6] md:aspect-[4/5] hover-lift block"
               style={{ animationDelay: `${i * 80}ms` }}
             >
               <img src={c.img} alt={c.t} className="absolute inset-0 h-full w-full object-cover" loading="lazy" />

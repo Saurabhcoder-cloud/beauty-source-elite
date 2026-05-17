@@ -8,7 +8,7 @@ export default function WholesalePage() {
     <PageFrame>
       <Nav />
 
-      <section className="relative overflow-hidden pt-32 pb-24 bg-gradient-to-b from-[#f8efea] via-[#f5ece6] to-[#efe3dc] text-[#1f1a17]">
+      <section className="relative overflow-hidden pt-24 sm:pt-32 pb-20 sm:pb-24 bg-gradient-to-b from-[#f8efea] via-[#f5ece6] to-[#efe3dc] text-[#1f1a17]">
         <div className="pointer-events-none absolute inset-0">
           <div className="absolute -top-28 left-1/2 h-[520px] w-[520px] rounded-full bg-[#d9b7a7]/20 blur-3xl animate-glow" />
 
@@ -17,14 +17,14 @@ export default function WholesalePage() {
           <div className="absolute inset-x-0 bottom-0 h-24 bg-gradient-to-t from-[#ead8cf]/70 to-transparent" />
         </div>
 
-        <div className="relative mx-auto max-w-7xl px-6 grid gap-14 lg:grid-cols-[1.1fr_0.9fr] items-center">
+        <div className="relative mx-auto max-w-7xl px-6 grid gap-10 sm:gap-14 lg:grid-cols-[1.1fr_0.9fr] items-center">
           <div className="space-y-8">
             <div className="inline-flex items-center gap-3 rounded-full bg-white/50 backdrop-blur-xl border border-[#d8c3b7] px-4 py-1.5 text-xs uppercase tracking-[0.3em] text-[#7b6a5f] shadow-lg">
               <span className="h-2 w-2 rounded-full bg-[#d8a48f] animate-pulse" />
               Luxury wholesale pricing with enterprise logistics.
             </div>
 
-            <h1 className="font-display text-5xl md:text-6xl lg:text-7xl leading-[1.02] tracking-tight">
+            <h1 className="font-display text-4xl sm:text-5xl md:text-6xl lg:text-7xl leading-[1.02] tracking-tight">
               Premium wholesale quotes for global beauty,
               healthcare and oral care distribution.
             </h1>

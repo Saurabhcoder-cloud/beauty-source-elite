@@ -15,7 +15,7 @@ export function Testimonials() {
   }, []);
 
   return (
-    <section className="py-28 bg-gradient-noir text-ivory relative overflow-hidden">
+    <section className="py-20 sm:py-24 lg:py-28 bg-gradient-noir text-ivory relative overflow-hidden">
       <div className="absolute inset-0 opacity-30">
         <div className="absolute top-1/4 left-1/4 h-96 w-96 rounded-full bg-rose-gold/40 blur-3xl" />
         <div className="absolute bottom-1/4 right-1/4 h-96 w-96 rounded-full bg-champagne/30 blur-3xl" />

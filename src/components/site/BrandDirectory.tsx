@@ -20,7 +20,7 @@ export function BrandDirectory() {
   }, [filter, q]);
 
   return (
-    <section id="brand-directory" className="py-28 bg-secondary/30">
+    <section id="brand-directory" className="py-20 sm:py-24 lg:py-28 bg-secondary/30">
       <div className="mx-auto max-w-7xl px-6">
         <div className="flex items-end justify-between flex-wrap gap-6 mb-10">
           <div>

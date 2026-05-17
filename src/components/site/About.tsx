@@ -43,7 +43,7 @@ const metrics = [
 
 export function About() {
   return (
-    <section id="about" className="py-28">
+    <section id="about" className="py-20 sm:py-24 lg:py-28">
       <div className="mx-auto max-w-7xl px-6 space-y-24">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           <div className="space-y-8">

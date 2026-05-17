@@ -96,10 +96,10 @@ ${form.message || "I'd like to discuss an international wholesale opportunity."}
   };
 
   return (
-    <section id="contact" className="py-28 bg-gradient-blush relative overflow-hidden">
+    <section id="contact" className="py-20 sm:py-24 lg:py-28 bg-gradient-blush relative overflow-hidden">
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_15%_20%,rgba(255,224,208,0.25),transparent_40%),radial-gradient(circle_at_85%_10%,rgba(255,255,255,0.12),transparent_25%)]" />
-      <div className="relative mx-auto max-w-7xl px-6 space-y-20">
-        <div className="grid gap-16 lg:grid-cols-[1.05fr_0.95fr] items-center">
+      <div className="relative mx-auto max-w-7xl px-6 space-y-16 sm:space-y-20">
+        <div className="grid gap-10 lg:grid-cols-[1.05fr_0.95fr] items-center">
           <div className="space-y-8">
             <p className="text-xs tracking-[0.3em] uppercase text-muted-foreground">Contact & Support</p>
             <h2 className="font-display text-4xl md:text-5xl leading-tight">
@@ -161,7 +161,7 @@ ${form.message || "I'd like to discuss an international wholesale opportunity."}
                 {offices.map((office) => (
                   <div
                     key={office.title}
-                    className="rounded-3xl bg-background/70 p-6 border border-border"
+                    className="rounded-3xl bg-background/70 p-5 md:p-6 border border-border"
                   >
                     <div className="flex flex-col gap-5">
                       <div className="flex items-start justify-between gap-4">
@@ -209,7 +209,7 @@ ${form.message || "I'd like to discuss an international wholesale opportunity."}
             </div>
           </div>
 
-          <form onSubmit={onEmail} className="glass rounded-3xl p-8 md:p-10 shadow-luxe border border-border space-y-6">
+          <form onSubmit={onEmail} className="glass rounded-3xl p-6 md:p-10 shadow-luxe border border-border space-y-6">
             <div>
               <p className="text-xs uppercase tracking-[0.3em] text-muted-foreground">Reach Our Team</p>
               <h3 className="mt-3 font-display text-3xl">Submit a direct inquiry</h3>
@@ -249,7 +249,7 @@ ${form.message || "I'd like to discuss an international wholesale opportunity."}
         target="_blank"
         rel="noopener noreferrer"
         aria-label="WhatsApp"
-        className="fixed bottom-6 right-6 z-40 h-14 w-14 rounded-full bg-[#25D366] text-white shadow-luxe flex items-center justify-center hover:scale-110 transition-transform"
+        className="fixed bottom-4 right-4 z-40 h-12 w-12 sm:bottom-6 sm:right-6 sm:h-14 sm:w-14 rounded-full bg-[#25D366] text-white shadow-luxe flex items-center justify-center hover:scale-110 transition-transform"
       >
         <svg width="26" height="26" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163a11.867 11.867 0 01-1.587-5.946C.16 5.335 5.495 0 12.05 0a11.82 11.82 0 018.413 3.488 11.82 11.82 0 013.48 8.414c-.003 6.557-5.338 11.892-11.893 11.892a11.9 11.9 0 01-5.688-1.448L.057 24zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884a9.86 9.86 0 001.51 5.26l-.999 3.648 3.978-1.607zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413z"/></svg>
       </a>

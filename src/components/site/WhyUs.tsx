@@ -9,7 +9,7 @@ const features = [
 
 export function WhyUs() {
   return (
-    <section className="py-28 relative overflow-hidden">
+    <section className="py-20 sm:py-24 lg:py-28 relative overflow-hidden">
       <div className="absolute inset-0 bg-gradient-blush opacity-50" />
       <div className="relative mx-auto max-w-7xl px-6">
         <div className="text-center max-w-2xl mx-auto mb-16">

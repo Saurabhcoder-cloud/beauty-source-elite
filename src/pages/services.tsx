@@ -63,20 +63,20 @@ export default function Services() {
   return (
     <PageFrame>
       <Nav />
-      <section className="relative overflow-hidden pb-32 pt-32">
+      <section className="relative overflow-hidden pb-20 sm:pb-28 pt-24 sm:pt-32">
         <div className="pointer-events-none absolute inset-0">
           <div className="absolute -top-40 left-0 h-[520px] w-[520px] rounded-full bg-blush/25 blur-3xl animate-glow" />
           <div className="absolute top-20 right-0 h-[420px] w-[420px] rounded-full bg-champagne/25 blur-3xl animate-glow" />
           <div className="absolute inset-x-0 top-[35%] h-px bg-gradient-to-r from-transparent via-rose-gold/30 to-transparent opacity-60" />
         </div>
 
-        <div className="relative mx-auto max-w-7xl px-6 grid gap-12 lg:grid-cols-[1.1fr_0.9fr] items-center">
+        <div className="relative mx-auto max-w-7xl px-6 grid gap-10 sm:gap-12 lg:grid-cols-[1.1fr_0.9fr] items-center">
           <div className="space-y-8">
             <div className="inline-flex items-center gap-3 glass rounded-full px-4 py-1.5 text-xs uppercase tracking-[0.3em] text-foreground/70">
               <span className="h-2 w-2 rounded-full bg-accent animate-pulse" />
               Enterprise logistics for premium wholesale sourcing.
             </div>
-            <h1 className="font-display text-5xl md:text-6xl lg:text-7xl leading-[1.02] tracking-tight">
+            <h1 className="font-display text-4xl sm:text-5xl md:text-6xl lg:text-7xl leading-[1.02] tracking-tight">
               Strategic sourcing, logistics and premiere commercial distribution for global buyers.
             </h1>
             <p className="max-w-2xl text-lg text-muted-foreground leading-relaxed">
@@ -138,7 +138,7 @@ export default function Services() {
       <section className="relative overflow-hidden pb-28">
         <div className="pointer-events-none absolute inset-x-0 top-0 h-24 bg-gradient-to-b from-rose-gold/15 to-transparent" />
         <div className="relative mx-auto max-w-7xl px-6 mt-24">
-          <div className="grid lg:grid-cols-2 gap-16 items-center">
+          <div className="grid gap-10 lg:grid-cols-2 lg:gap-16 items-center">
             <div className="space-y-8">
               <div className="text-xs tracking-[0.3em] uppercase text-muted-foreground">Trusted capabilities</div>
               <h2 className="font-display text-4xl md:text-5xl leading-tight">A premium services portfolio for discerning wholesale buyers.</h2>

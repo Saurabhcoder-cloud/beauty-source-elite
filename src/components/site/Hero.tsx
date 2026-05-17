@@ -1,6 +1,6 @@
 export function Hero() {
   return (
-    <section id="top" className="relative min-h-screen overflow-hidden pt-32 pb-20">
+    <section id="top" className="relative min-h-screen overflow-hidden pt-28 sm:pt-32 pb-20">
       {/* Ambient glow */}
       <div className="pointer-events-none absolute inset-0">
         <div className="absolute -top-40 -left-40 h-[600px] w-[600px] rounded-full bg-blush/40 blur-3xl animate-glow" />
@@ -14,7 +14,7 @@ export function Hero() {
             <span className="h-1.5 w-1.5 rounded-full bg-accent animate-pulse" />
             Canadian HQ · Global wholesale distribution
           </div>
-          <h1 className="font-display text-5xl md:text-6xl lg:text-7xl leading-[1.05] tracking-tight">
+          <h1 className="font-display text-4xl sm:text-5xl md:text-6xl lg:text-7xl leading-[1.05] tracking-tight">
             Authentic luxury
             <br />
             <span className="italic text-gradient-gold">cosmetics, oral care</span>
@@ -43,7 +43,7 @@ export function Hero() {
             </a>
           </div>
 
-          <div className="mt-14 grid grid-cols-3 gap-6 max-w-lg">
+          <div className="mt-12 grid grid-cols-3 gap-4 sm:gap-6 max-w-lg">
             {[
               { v: "1.2K+", l: "Buyers" },
               { v: "80+", l: "Countries" },

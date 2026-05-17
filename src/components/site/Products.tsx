@@ -16,7 +16,7 @@ export function Products() {
   const [active, setActive] = useState<Product | null>(null);
 
   return (
-    <section id="products" className="py-28 bg-secondary/30">
+    <section id="products" className="py-20 sm:py-24 lg:py-28 bg-secondary/30">
       <div className="mx-auto max-w-7xl px-6">
         <div className="flex items-end justify-between flex-wrap gap-6 mb-14">
           <div>
@@ -28,7 +28,7 @@ export function Products() {
           </a>
         </div>
 
-        <div className="grid grid-cols-2 lg:grid-cols-4 gap-5">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-5">
           {products.map((p) => (
             <button
               key={p.t}

@@ -22,10 +22,10 @@ export function Nav() {
   }, []);
 
   return (
-    <header className={`fixed top-0 inset-x-0 z-50 transition-all duration-500 ${scrolled ? "py-3" : "py-5"}`}>
+    <header className={`fixed top-0 inset-x-0 z-50 transition-all duration-500 ${scrolled ? "py-2 sm:py-3" : "py-4 sm:py-5"}`}>
       <div
-        className={`mx-auto max-w-7xl px-6 flex items-center justify-between transition-all duration-500 ${
-          scrolled ? "glass rounded-full mx-4 md:mx-auto px-6 py-3 shadow-soft" : ""
+        className={`mx-auto max-w-7xl px-4 sm:px-6 flex items-center justify-between transition-all duration-500 ${
+          scrolled ? "glass rounded-full mx-4 sm:mx-auto px-4 sm:px-6 py-2 sm:py-3 shadow-soft" : ""
         }`}
       >
         <Link to="/" className="flex items-center gap-3 group">
