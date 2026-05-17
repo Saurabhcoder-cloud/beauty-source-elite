@@ -13,7 +13,7 @@ export function WhyUs() {
       <div className="absolute inset-0 bg-gradient-blush opacity-50" />
       <div className="relative mx-auto max-w-7xl px-6">
         <div className="text-center max-w-2xl mx-auto mb-16">
-          <p className="text-xs tracking-[0.3em] uppercase text-muted-foreground">Why Maison Beauté</p>
+          <p className="text-xs tracking-[0.3em] uppercase text-muted-foreground">Why Cosmetics Distr</p>
           <h2 className="mt-3 font-display text-4xl md:text-5xl">A standard the industry trusts</h2>
         </div>
 

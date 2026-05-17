@@ -31,10 +31,10 @@ export function Nav() {
         <Link to="/" className="flex items-center gap-3 group">
           <img
             src="/logo.svg"
-            alt="Cosmetics Distr"
+            alt="Cosmetics & Skincare Distr"
             className="h-10 w-auto object-contain transition-transform duration-300 group-hover:-translate-y-0.5"
           />
-          <span className="sr-only">Cosmetics Distr</span>
+          <span className="sr-only">Cosmetics & Skincare Distr</span>
         </Link>
 
         <nav className="hidden md:flex items-center gap-8 text-sm" onMouseLeave={() => setMega(false)}>

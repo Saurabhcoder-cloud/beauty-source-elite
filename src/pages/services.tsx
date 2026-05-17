@@ -80,11 +80,11 @@ export default function Services() {
               Strategic sourcing, logistics and premiere commercial distribution for global buyers.
             </h1>
             <p className="max-w-2xl text-lg text-muted-foreground leading-relaxed">
-              Maison Beauté delivers an immersive product sourcing experience for authorized cosmetics, oral care and healthcare brands — with vetted suppliers, export-ready shipping and enterprise-grade account service.
+              Cosmetics & Skincare Distr delivers an immersive product sourcing experience for authorized cosmetics, oral care and healthcare brands — with vetted suppliers, export-ready shipping and enterprise-grade account service.
             </p>
             <div className="mt-10 flex flex-wrap gap-4">
               <a
-                href={buildWhatsAppUrl("Hello Maison Beauté, I would like to discuss your services and wholesale supply options.")}
+                href={buildWhatsAppUrl("Hello Cosmetics & Skincare Distr, I would like to discuss your services and wholesale supply options.")}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="group inline-flex items-center gap-2 rounded-full bg-foreground text-background px-7 py-3.5 text-sm font-medium hover:bg-accent transition-all duration-300 shadow-luxe"
@@ -103,8 +103,8 @@ export default function Services() {
           <div className="relative hidden lg:block">
             <div className="aspect-[4/5] overflow-hidden rounded-[2.5rem] shadow-luxe border border-border bg-card">
               <img
-                src="https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?w=1200&q=80"
-                alt="Premium logistics and sourcing operations"
+                src="https://images.unsplash.com/photo-1620916566398-39f1143ab7be?w=1200&q=80"
+                alt="Premium beauty and healthcare supply chain"
                 className="h-full w-full object-cover"
                 loading="lazy"
               />

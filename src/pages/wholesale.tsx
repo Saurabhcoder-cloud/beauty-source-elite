@@ -60,8 +60,8 @@ export default function WholesalePage() {
           <div className="relative hidden lg:block">
             <div className="aspect-[4/5] overflow-hidden rounded-[2.5rem] shadow-2xl border border-[#d8c3b7] bg-white/40">
               <img
-                src="https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?w=1200&q=80"
-                alt="Luxury freight and distribution operations"
+                src="https://images.unsplash.com/photo-1584634731339-252c581abfc5?w=1200&q=80"
+                alt="Clinical healthcare and distribution logistics"
                 className="h-full w-full object-cover hover:scale-105 transition-transform duration-700"
                 loading="lazy"
               />

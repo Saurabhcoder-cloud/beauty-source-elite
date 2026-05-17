@@ -1,4 +1,4 @@
-// Master category data for Maison Beauté distribution platform
+// Master category data for Cosmetics & Skincare Distr distribution platform
 export type CategoryKey = "cosmetics" | "oral-care" | "healthcare";
 
 export type CategoryProduct = {
@@ -31,7 +31,7 @@ export const CATEGORIES: Record<CategoryKey, Category> = {
     slug: "/cosmetics",
     name: "Cosmetics & Skincare",
     tagline: "Editorial luxury beauty",
-    kicker: "Maison Beauté · Beauty",
+    kicker: "Cosmetics Distr · Beauty",
     description:
       "Authorized European wholesale of luxury skincare, makeup and fragrances — from clinical dermo-cosmetics to couture houses.",
     heroImg:
@@ -75,11 +75,11 @@ export const CATEGORIES: Record<CategoryKey, Category> = {
     slug: "/oral-care",
     name: "Oral Care",
     tagline: "Clinical freshness, premium finish",
-    kicker: "Maison Beauté · Oral",
+    kicker: "Cosmetics Distr · Oral",
     description:
       "From dental-pharmacy bestsellers to enamel-repair innovations — a complete oral care portfolio for retail, pharmacy and dental distribution.",
     heroImg:
-      "https://images.unsplash.com/photo-1607613009820-a29f7bb81c04?w=1200&q=80",
+      "https://images.unsplash.com/photo-1612886623306-c89c2fcd6c0e?w=1200&q=80",
     accent: "#22b8cf",
     themeClass: "theme-oral",
     brands: [
@@ -118,11 +118,11 @@ export const CATEGORIES: Record<CategoryKey, Category> = {
     slug: "/healthcare",
     name: "Healthcare",
     tagline: "Pharmaceutical-grade distribution",
-    kicker: "Maison Beauté · Health",
+    kicker: "Cosmetics Distr · Health",
     description:
       "Authorized international distribution of OTC pharmaceuticals, medical devices and consumer healthcare from the world's leading manufacturers.",
     heroImg:
-      "https://images.unsplash.com/photo-1631549916768-4119b2e5f926?w=1200&q=80",
+      "https://images.unsplash.com/photo-1584634731339-252c581abfc5?w=1200&q=80",
     accent: "#2563eb",
     themeClass: "theme-healthcare",
     brands: [

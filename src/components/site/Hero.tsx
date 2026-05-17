@@ -60,22 +60,22 @@ export function Hero() {
         {/* Floating product cards */}
         <div className="lg:col-span-5 relative h-[560px] hidden lg:block">
           <FloatingCard
-            src="https://images.unsplash.com/photo-1620916566398-39f1143ab7be?w=600&q=80"
+            src="https://images.unsplash.com/photo-1620916566398-39f1143ab7be?w=900&q=80"
             title="Hydrating Serum"
             sub="Vitamin C · 30ml"
             className="absolute top-0 right-12 w-64 animate-float"
           />
           <FloatingCard
-            src="https://images.unsplash.com/photo-1556228720-195a672e8a03?w=600&q=80"
-            title="Glow Essence"
-            sub="Niacinamide · 50ml"
+            src="https://images.unsplash.com/photo-1556228720-195a672e8a03?w=900&q=80"
+            title="Luxury Skincare"
+            sub="Ceramide · 50ml"
             className="absolute top-44 left-0 w-56 animate-float-slow"
             style={{ animationDelay: "1s" }}
           />
           <FloatingCard
-            src="https://images.unsplash.com/photo-1571781926291-c477ebfd024b?w=600&q=80"
-            title="Rose Eau de Parfum"
-            sub="Limited · 100ml"
+            src="https://images.unsplash.com/photo-1522335789203-aaa1f15a5045?w=900&q=80"
+            title="Premium Fragrance"
+            sub="Signature · 100ml"
             className="absolute bottom-0 right-0 w-60 animate-float"
             style={{ animationDelay: "2s" }}
           />

@@ -32,7 +32,7 @@ export function Footer() {
       </div>
       <div className="border-t border-ivory/10">
         <div className="mx-auto max-w-7xl px-6 py-6 flex flex-wrap items-center justify-between gap-4 text-xs text-ivory/50">
-          <div>© {new Date().getFullYear()} Maison Beauté. All rights reserved.</div>
+          <div>© {new Date().getFullYear()} Cosmetics & Skincare Distr. All rights reserved.</div>
           <div>Toronto · Amsterdam · Dubai</div>
         </div>
       </div>

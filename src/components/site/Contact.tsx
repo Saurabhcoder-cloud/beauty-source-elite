@@ -139,8 +139,8 @@ ${form.message || "I'd like to discuss an international wholesale opportunity."}
 
           <div className="relative overflow-hidden rounded-[2.5rem] bg-[radial-gradient(circle_at_top_right,rgba(255,255,255,0.15),transparent_20%),radial-gradient(circle_at_bottom_left,rgba(255,230,215,0.2),transparent_30%)] shadow-luxe">
             <img
-              src="https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?w=1200&q=80"
-              alt="Luxury logistics and warehouse operations"
+              src="https://images.unsplash.com/photo-1626015449802-d031cd24bd8d?w=1200&q=80"
+              alt="Premium beauty product distribution"
               className="h-full w-full object-cover"
             />
             <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-noir/80 to-transparent p-8">

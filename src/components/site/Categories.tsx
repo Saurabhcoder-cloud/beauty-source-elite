@@ -1,10 +1,10 @@
 const cats = [
-  { t: "Skincare", img: "https://images.unsplash.com/photo-1556228720-195a672e8a03?w=900&q=80" },
+  { t: "Skincare", img: "https://images.unsplash.com/photo-1620916566398-39f1143ab7be?w=900&q=80" },
   { t: "Hair Care", img: "https://images.unsplash.com/photo-1626015449802-d031cd24bd8d?w=900&q=80" },
   { t: "Makeup", img: "https://images.unsplash.com/photo-1522335789203-aaa1f15a5045?w=900&q=80" },
   { t: "Fragrances", img: "https://images.unsplash.com/photo-1541643600914-78b084683601?w=900&q=80" },
-  { t: "Personal Care", img: "https://images.unsplash.com/photo-1631730486572-226d1f595b68?w=900&q=80" },
-  { t: "Health & Beauty", img: "https://images.unsplash.com/photo-1620916297397-a4a5402a3c6c?w=900&q=80" },
+  { t: "Personal Care", img: "https://images.unsplash.com/photo-1599725321468-50f23971763f?w=900&q=80" },
+  { t: "Healthcare", img: "https://images.unsplash.com/photo-1584634731339-252c581abfc5?w=900&q=80" },
 ];
 
 export function Categories() {
