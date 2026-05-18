@@ -1,5 +1,5 @@
 const cats = [
-  { t: "Skincare", img: "https://images.unsplash.com/photo-1620916566398-39f1143ab7be?w=900&q=80" },
+  { t: "Skincare", img: "https://aakarfragrance.com/assets/img/portfolio/3.jpg" },
   { t: "Hair Care", img: "https://images.unsplash.com/photo-1626015449802-d031cd24bd8d?w=900&q=80" },
   { t: "Makeup", img: "https://images.unsplash.com/photo-1522335789203-aaa1f15a5045?w=900&q=80" },
   { t: "Fragrances", img: "https://images.unsplash.com/photo-1541643600914-78b084683601?w=900&q=80" },

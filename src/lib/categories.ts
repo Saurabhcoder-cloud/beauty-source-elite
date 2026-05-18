@@ -35,7 +35,7 @@ export const CATEGORIES: Record<CategoryKey, Category> = {
     description:
       "Authorized European wholesale of luxury skincare, makeup and fragrances — from clinical dermo-cosmetics to couture houses.",
     heroImg:
-      "https://images.unsplash.com/photo-1620916566398-39f1143ab7be?w=1200&q=80",
+      "https://aakarfragrance.com/assets/img/portfolio/3.jpg",
     accent: "#b08968",
     themeClass: "theme-cosmetics",
     brands: [
@@ -47,14 +47,14 @@ export const CATEGORIES: Record<CategoryKey, Category> = {
       "Uriage","Rimmel London","NYX Professional Makeup",
     ],
     products: [
-      { t: "Vitamin C Brightening Serum", brand: "La Roche-Posay", size: "30ml", img: "https://images.unsplash.com/photo-1620916566398-39f1143ab7be?w=800&q=80", description: "Stabilized 10% pure vitamin C serum that visibly brightens and evens skin tone." },
-      { t: "Hyaluronic Daily Moisturizer", brand: "CeraVe", size: "473ml", img: "https://images.unsplash.com/photo-1556228841-a3c527ebefe5?w=800&q=80", description: "Lightweight, oil-free moisturizer with three essential ceramides." },
-      { t: "Mineral SPF50+ Sunscreen", brand: "Bioderma", size: "40ml", img: "https://images.unsplash.com/photo-1556228578-8c89e6adf883?w=800&q=80", description: "Photostable broad-spectrum SPF50+ with 100% mineral filters." },
-      { t: "Velvet Matte Lipstick", brand: "Maybelline", size: "3.9g", img: "https://images.unsplash.com/photo-1586495777744-4413f21062fa?w=800&q=80", description: "Long-wearing matte lipstick with weightless cream-to-powder finish." },
-      { t: "Niacinamide 10% + Zinc 1%", brand: "The Ordinary", size: "30ml", img: "https://images.unsplash.com/photo-1570194065650-d99fb4bedf0a?w=800&q=80", description: "High-strength vitamin and mineral blemish formula." },
-      { t: "Thermal Spring Water Mist", brand: "Vichy", size: "150ml", img: "https://images.unsplash.com/photo-1608248543803-ba4f8c70ae0b?w=800&q=80", description: "Mineralizing thermal water from Vichy, France." },
-      { t: "Rose Eau de Parfum", brand: "Lancôme", size: "100ml", img: "https://images.unsplash.com/photo-1541643600914-78b084683601?w=800&q=80", description: "An elegant Damask rose composition crafted in Grasse." },
-      { t: "Bond Repair Treatment", brand: "Kérastase", size: "100ml", img: "https://images.unsplash.com/photo-1626015449802-d031cd24bd8d?w=800&q=80", description: "Patented bond-building treatment for chemically treated hair." },
+      { t: "Vitamin C Brightening Serum", brand: "La Roche-Posay", size: "30ml", img: "https://aakarfragrance.com/assets/img/portfolio/3.jpg", description: "Stabilized 10% pure vitamin C serum that visibly brightens and evens skin tone." },
+      { t: "Hyaluronic Daily Moisturizer", brand: "CeraVe", size: "473ml", img: "https://aakarfragrance.com/assets/img/portfolio/3.jpg", description: "Lightweight, oil-free moisturizer with three essential ceramides." },
+      { t: "Mineral SPF50+ Sunscreen", brand: "Bioderma", size: "40ml", img: "https://aakarfragrance.com/assets/img/portfolio/3.jpg", description: "Photostable broad-spectrum SPF50+ with 100% mineral filters." },
+      { t: "Velvet Matte Lipstick", brand: "Maybelline", size: "3.9g", img: "https://aakarfragrance.com/assets/img/portfolio/3.jpg", description: "Long-wearing matte lipstick with weightless cream-to-powder finish." },
+      { t: "Niacinamide 10% + Zinc 1%", brand: "The Ordinary", size: "30ml", img: "https://aakarfragrance.com/assets/img/portfolio/3.jpg", description: "High-strength vitamin and mineral blemish formula." },
+      { t: "Thermal Spring Water Mist", brand: "Vichy", size: "150ml", img: "https://aakarfragrance.com/assets/img/portfolio/3.jpg", description: "Mineralizing thermal water from Vichy, France." },
+      { t: "Rose Eau de Parfum", brand: "Lancôme", size: "100ml", img: "https://aakarfragrance.com/assets/img/portfolio/3.jpg", description: "An elegant Damask rose composition crafted in Grasse." },
+      { t: "Bond Repair Treatment", brand: "Kérastase", size: "100ml", img: "https://aakarfragrance.com/assets/img/portfolio/3.jpg", description: "Patented bond-building treatment for chemically treated hair." },
     ],
     stats: [
       { v: "30+", l: "Luxury Houses" },
@@ -79,7 +79,7 @@ export const CATEGORIES: Record<CategoryKey, Category> = {
     description:
       "From dental-pharmacy bestsellers to enamel-repair innovations — a complete oral care portfolio for retail, pharmacy and dental distribution.",
     heroImg:
-      "https://images.unsplash.com/photo-1612886623306-c89c2fcd6c0e?w=1200&q=80",
+      "https://cosmeticscience.net/wp-content/uploads/2024/07/AdobeStock_366763950-scaled.jpeg",
     accent: "#22b8cf",
     themeClass: "theme-oral",
     brands: [
@@ -90,14 +90,14 @@ export const CATEGORIES: Record<CategoryKey, Category> = {
       "Denivit","Dr. Best","Swissdent",
     ],
     products: [
-      { t: "Whitening Mint Toothpaste", brand: "Marvis", size: "75ml", img: "https://images.unsplash.com/photo-1559591935-c6c92c6ff6c5?w=800&q=80", description: "Italian luxury toothpaste with intense mint and whitening complex." },
-      { t: "Enamel Repair Toothpaste", brand: "Sensodyne", size: "75ml", img: "https://images.unsplash.com/photo-1570194065650-d99fb4bedf0a?w=800&q=80", description: "Daily enamel repair formula clinically proven for sensitive teeth." },
-      { t: "Pro 5000 Electric Toothbrush", brand: "Oral-B", size: "1 unit", img: "https://images.unsplash.com/photo-1612886623306-c89c2fcd6c0e?w=800&q=80", description: "Bluetooth-enabled oscillating brush with pressure sensor." },
-      { t: "Cool Mint Mouthwash", brand: "Listerine", size: "1L", img: "https://images.unsplash.com/photo-1556228852-80c7debbfc6c?w=800&q=80", description: "Antibacterial mouthwash with four essential oils. 24-hour protection." },
-      { t: "CS 5460 Ultra Soft Brush", brand: "Curaprox", size: "1 unit", img: "https://images.unsplash.com/photo-1559591935-c6c92c6ff6c5?w=800&q=80", description: "5,460 ultra-soft Curen filaments for gentle plaque removal." },
-      { t: "Gum Protection Toothpaste", brand: "Parodontax", size: "75ml", img: "https://images.unsplash.com/photo-1607613009820-a29f7bb81c04?w=800&q=80", description: "Daily fluoride toothpaste clinically proven to reduce bleeding gums." },
-      { t: "Caries Protection Rinse", brand: "Elmex", size: "400ml", img: "https://images.unsplash.com/photo-1556228852-80c7debbfc6c?w=800&q=80", description: "Amine fluoride mouth rinse for daily caries protection." },
-      { t: "Biorepair Plus Sensitive", brand: "Biorepair", size: "75ml", img: "https://images.unsplash.com/photo-1570194065650-d99fb4bedf0a?w=800&q=80", description: "Microrepair technology repairs enamel and dentin surface." },
+      { t: "Whitening Mint Toothpaste", brand: "Marvis", size: "75ml", img: "https://cosmeticscience.net/wp-content/uploads/2024/07/AdobeStock_366763950-scaled.jpeg", description: "Italian luxury toothpaste with intense mint and whitening complex." },
+      { t: "Enamel Repair Toothpaste", brand: "Sensodyne", size: "75ml", img: "https://cosmeticscience.net/wp-content/uploads/2024/07/AdobeStock_366763950-scaled.jpeg", description: "Daily enamel repair formula clinically proven for sensitive teeth." },
+      { t: "Pro 5000 Electric Toothbrush", brand: "Oral-B", size: "1 unit", img: "https://cosmeticscience.net/wp-content/uploads/2024/07/AdobeStock_366763950-scaled.jpeg", description: "Bluetooth-enabled oscillating brush with pressure sensor." },
+      { t: "Cool Mint Mouthwash", brand: "Listerine", size: "1L", img: "https://cosmeticscience.net/wp-content/uploads/2024/07/AdobeStock_366763950-scaled.jpeg", description: "Antibacterial mouthwash with four essential oils. 24-hour protection." },
+      { t: "CS 5460 Ultra Soft Brush", brand: "Curaprox", size: "1 unit", img: "https://cosmeticscience.net/wp-content/uploads/2024/07/AdobeStock_366763950-scaled.jpeg", description: "5,460 ultra-soft Curen filaments for gentle plaque removal." },
+      { t: "Gum Protection Toothpaste", brand: "Parodontax", size: "75ml", img: "https://cosmeticscience.net/wp-content/uploads/2024/07/AdobeStock_366763950-scaled.jpeg", description: "Daily fluoride toothpaste clinically proven to reduce bleeding gums." },
+      { t: "Caries Protection Rinse", brand: "Elmex", size: "400ml", img: "https://cosmeticscience.net/wp-content/uploads/2024/07/AdobeStock_366763950-scaled.jpeg", description: "Amine fluoride mouth rinse for daily caries protection." },
+      { t: "Biorepair Plus Sensitive", brand: "Biorepair", size: "75ml", img: "https://cosmeticscience.net/wp-content/uploads/2024/07/AdobeStock_366763950-scaled.jpeg", description: "Microrepair technology repairs enamel and dentin surface." },
     ],
     stats: [
       { v: "30+", l: "Brands" },
