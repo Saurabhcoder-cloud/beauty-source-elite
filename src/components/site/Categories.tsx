@@ -1,10 +1,10 @@
 const cats = [
   { t: "Skincare", img: "https://aakarfragrance.com/assets/img/portfolio/3.jpg" },
-  { t: "Hair Care", img: "https://images.unsplash.com/photo-1626015449802-d031cd24bd8d?w=900&q=80" },
-  { t: "Makeup", img: "https://images.unsplash.com/photo-1522335789203-aaa1f15a5045?w=900&q=80" },
-  { t: "Fragrances", img: "https://images.unsplash.com/photo-1541643600914-78b084683601?w=900&q=80" },
-  { t: "Personal Care", img: "https://images.unsplash.com/photo-1599725321468-50f23971763f?w=900&q=80" },
-  { t: "Healthcare", img: "https://images.unsplash.com/photo-1584634731339-252c581abfc5?w=900&q=80" },
+  { t: "Hair Care", img: "https://www.instyle.com/thmb/izw2UyeCDGJvuOwGU9pOsz3aM_4=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/ExclusiveLead_Hair_221-ecd7cf58e8fe4252bc461380a6682142.jpg" },
+  { t: "Makeup", img: "https://img.magnific.com/free-photo/close-up-collection-make-up-beauty-products_23-2148620012.jpg?semt=ais_hybrid&w=740&q=80" },
+  { t: "Fragrances", img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPE8fGO_s-UnhUeETzmbPu85q_WDvAslGdDg&s" },
+  { t: "Personal Care", img: "https://t4.ftcdn.net/jpg/01/68/51/55/360_F_168515550_AYObBKUuUS3k0fleEsBI0yxVGVYOm5nm.jpg" },
+  { t: "Healthcare", img: "https://www.cardinalhealth.com/content/dam/corp/products/professional-products/medical-products/grid/grid-square-advanced-wound-care.jpg" },
 ];
 
 export function Categories() {

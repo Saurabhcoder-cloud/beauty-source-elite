@@ -50,11 +50,11 @@ export const CATEGORIES: Record<CategoryKey, Category> = {
       { t: "Vitamin C Brightening Serum", brand: "La Roche-Posay", size: "30ml", img: "https://aakarfragrance.com/assets/img/portfolio/3.jpg", description: "Stabilized 10% pure vitamin C serum that visibly brightens and evens skin tone." },
       { t: "Hyaluronic Daily Moisturizer", brand: "CeraVe", size: "473ml", img: "https://aakarfragrance.com/assets/img/portfolio/3.jpg", description: "Lightweight, oil-free moisturizer with three essential ceramides." },
       { t: "Mineral SPF50+ Sunscreen", brand: "Bioderma", size: "40ml", img: "https://aakarfragrance.com/assets/img/portfolio/3.jpg", description: "Photostable broad-spectrum SPF50+ with 100% mineral filters." },
-      { t: "Velvet Matte Lipstick", brand: "Maybelline", size: "3.9g", img: "https://aakarfragrance.com/assets/img/portfolio/3.jpg", description: "Long-wearing matte lipstick with weightless cream-to-powder finish." },
+      { t: "Velvet Matte Lipstick", brand: "Maybelline", size: "3.9g", img: "https://img.magnific.com/free-photo/close-up-collection-make-up-beauty-products_23-2148620012.jpg?semt=ais_hybrid&w=740&q=80", description: "Long-wearing matte lipstick with weightless cream-to-powder finish." },
       { t: "Niacinamide 10% + Zinc 1%", brand: "The Ordinary", size: "30ml", img: "https://aakarfragrance.com/assets/img/portfolio/3.jpg", description: "High-strength vitamin and mineral blemish formula." },
-      { t: "Thermal Spring Water Mist", brand: "Vichy", size: "150ml", img: "https://aakarfragrance.com/assets/img/portfolio/3.jpg", description: "Mineralizing thermal water from Vichy, France." },
-      { t: "Rose Eau de Parfum", brand: "Lancôme", size: "100ml", img: "https://aakarfragrance.com/assets/img/portfolio/3.jpg", description: "An elegant Damask rose composition crafted in Grasse." },
-      { t: "Bond Repair Treatment", brand: "Kérastase", size: "100ml", img: "https://aakarfragrance.com/assets/img/portfolio/3.jpg", description: "Patented bond-building treatment for chemically treated hair." },
+      { t: "Thermal Spring Water Mist", brand: "Vichy", size: "150ml", img: "https://t4.ftcdn.net/jpg/01/68/51/55/360_F_168515550_AYObBKUuUS3k0fleEsBI0yxVGVYOm5nm.jpg", description: "Mineralizing thermal water from Vichy, France." },
+      { t: "Rose Eau de Parfum", brand: "Lancôme", size: "100ml", img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPE8fGO_s-UnhUeETzmbPu85q_WDvAslGdDg&s", description: "An elegant Damask rose composition crafted in Grasse." },
+      { t: "Bond Repair Treatment", brand: "Kérastase", size: "100ml", img: "https://www.instyle.com/thmb/izw2UyeCDGJvuOwGU9pOsz3aM_4=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/ExclusiveLead_Hair_221-ecd7cf58e8fe4252bc461380a6682142.jpg", description: "Patented bond-building treatment for chemically treated hair." },
     ],
     stats: [
       { v: "30+", l: "Luxury Houses" },
@@ -122,7 +122,7 @@ export const CATEGORIES: Record<CategoryKey, Category> = {
     description:
       "Authorized international distribution of OTC pharmaceuticals, medical devices and consumer healthcare from the world's leading manufacturers.",
     heroImg:
-      "https://images.unsplash.com/photo-1584634731339-252c581abfc5?w=1200&q=80",
+      "https://www.cardinalhealth.com/content/dam/corp/products/professional-products/medical-products/grid/grid-square-advanced-wound-care.jpg",
     accent: "#2563eb",
     themeClass: "theme-healthcare",
     brands: [
@@ -134,14 +134,14 @@ export const CATEGORIES: Record<CategoryKey, Category> = {
       "Essity","Procter & Gamble Health","Haleon","Viatris","Takeda",
     ],
     products: [
-      { t: "Surgical Mask Type IIR (box of 50)", brand: "Hartmann", size: "50 pcs", img: "https://images.unsplash.com/photo-1584634731339-252c581abfc5?w=800&q=80", description: "EN 14683 Type IIR three-layer surgical mask with BFE ≥ 98%." },
-      { t: "Sterile Gauze Compress 10×10", brand: "Essity", size: "100 pcs", img: "https://images.unsplash.com/photo-1583912086096-8c60d75a53f9?w=800&q=80", description: "Sterile non-woven gauze compress for wound care." },
-      { t: "Vitamin D3 1000 IU", brand: "Bayer", size: "60 tabs", img: "https://images.unsplash.com/photo-1587854692152-cbe660dbde88?w=800&q=80", description: "Daily vitamin D3 supplement for bone and immune health." },
-      { t: "Glucose Test Strips", brand: "Abbott", size: "50 pcs", img: "https://images.unsplash.com/photo-1583912086096-8c60d75a53f9?w=800&q=80", description: "FreeStyle compatible blood glucose test strips." },
-      { t: "Disposable Examination Gloves", brand: "Becton Dickinson", size: "100 pcs", img: "https://images.unsplash.com/photo-1584634731339-252c581abfc5?w=800&q=80", description: "Powder-free nitrile examination gloves, CE & FDA." },
-      { t: "Digital Thermometer", brand: "Philips Healthcare", size: "1 unit", img: "https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=800&q=80", description: "Clinical-grade digital thermometer, 10-second reading." },
-      { t: "Insulin Pen Needles 4mm", brand: "Novo Nordisk", size: "100 pcs", img: "https://images.unsplash.com/photo-1583912086096-8c60d75a53f9?w=800&q=80", description: "Ultra-thin pen needles compatible with all standard insulin pens." },
-      { t: "Wound Care Adhesive Bandages", brand: "Johnson & Johnson", size: "100 pcs", img: "https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=800&q=80", description: "Sterile adhesive bandages, hypoallergenic, latex-free." },
+      { t: "Surgical Mask Type IIR (box of 50)", brand: "Hartmann", size: "50 pcs", img: "https://www.cardinalhealth.com/content/dam/corp/products/professional-products/medical-products/grid/grid-square-advanced-wound-care.jpg", description: "EN 14683 Type IIR three-layer surgical mask with BFE ≥ 98%." },
+      { t: "Sterile Gauze Compress 10×10", brand: "Essity", size: "100 pcs", img: "https://www.cardinalhealth.com/content/dam/corp/products/professional-products/medical-products/grid/grid-square-advanced-wound-care.jpg", description: "Sterile non-woven gauze compress for wound care." },
+      { t: "Vitamin D3 1000 IU", brand: "Bayer", size: "60 tabs", img: "https://www.cardinalhealth.com/content/dam/corp/products/professional-products/medical-products/grid/grid-square-advanced-wound-care.jpg", description: "Daily vitamin D3 supplement for bone and immune health." },
+      { t: "Glucose Test Strips", brand: "Abbott", size: "50 pcs", img: "https://www.cardinalhealth.com/content/dam/corp/products/professional-products/medical-products/grid/grid-square-advanced-wound-care.jpg", description: "FreeStyle compatible blood glucose test strips." },
+      { t: "Disposable Examination Gloves", brand: "Becton Dickinson", size: "100 pcs", img: "https://www.cardinalhealth.com/content/dam/corp/products/professional-products/medical-products/grid/grid-square-advanced-wound-care.jpg", description: "Powder-free nitrile examination gloves, CE & FDA." },
+      { t: "Digital Thermometer", brand: "Philips Healthcare", size: "1 unit", img: "https://www.cardinalhealth.com/content/dam/corp/products/professional-products/medical-products/grid/grid-square-advanced-wound-care.jpg", description: "Clinical-grade digital thermometer, 10-second reading." },
+      { t: "Insulin Pen Needles 4mm", brand: "Novo Nordisk", size: "100 pcs", img: "https://www.cardinalhealth.com/content/dam/corp/products/professional-products/medical-products/grid/grid-square-advanced-wound-care.jpg", description: "Ultra-thin pen needles compatible with all standard insulin pens." },
+      { t: "Wound Care Adhesive Bandages", brand: "Johnson & Johnson", size: "100 pcs", img: "https://www.cardinalhealth.com/content/dam/corp/products/professional-products/medical-products/grid/grid-square-advanced-wound-care.jpg", description: "Sterile adhesive bandages, hypoallergenic, latex-free." },
     ],
     stats: [
       { v: "30+", l: "Manufacturers" },
