@@ -47,13 +47,13 @@ export const CATEGORIES: Record<CategoryKey, Category> = {
       "Uriage","Rimmel London","NYX Professional Makeup",
     ],
     products: [
-      { t: "Vitamin C Brightening Serum", brand: "La Roche-Posay", size: "30ml", img: "https://aakarfragrance.com/assets/img/portfolio/3.jpg", description: "Stabilized 10% pure vitamin C serum that visibly brightens and evens skin tone." },
-      { t: "Hyaluronic Daily Moisturizer", brand: "CeraVe", size: "473ml", img: "https://aakarfragrance.com/assets/img/portfolio/3.jpg", description: "Lightweight, oil-free moisturizer with three essential ceramides." },
-      { t: "Mineral SPF50+ Sunscreen", brand: "Bioderma", size: "40ml", img: "https://aakarfragrance.com/assets/img/portfolio/3.jpg", description: "Photostable broad-spectrum SPF50+ with 100% mineral filters." },
+      { t: "Vitamin C Brightening Serum", brand: "La Roche-Posay", size: "30ml", img: "https://images.unsplash.com/photo-1620916566398-39f1143ab7be?q=80&w=1200&auto=format&fit=crop", description: "Stabilized 10% pure vitamin C serum that visibly brightens and evens skin tone." },
+      { t: "Hyaluronic Daily Moisturizer", brand: "CeraVe", size: "473ml", img: "https://images.unsplash.com/photo-1556228578-8c89e6adf883?q=80&w=1200&auto=format&fit=crop", description: "Lightweight, oil-free moisturizer with three essential ceramides." },
+      { t: "Mineral SPF50+ Sunscreen", brand: "Bioderma", size: "40ml", img: "https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?q=80&w=1200&auto=format&fit=crop", description: "Photostable broad-spectrum SPF50+ with 100% mineral filters." },
       { t: "Velvet Matte Lipstick", brand: "Maybelline", size: "3.9g", img: "https://img.magnific.com/free-photo/close-up-collection-make-up-beauty-products_23-2148620012.jpg?semt=ais_hybrid&w=740&q=80", description: "Long-wearing matte lipstick with weightless cream-to-powder finish." },
-      { t: "Niacinamide 10% + Zinc 1%", brand: "The Ordinary", size: "30ml", img: "https://aakarfragrance.com/assets/img/portfolio/3.jpg", description: "High-strength vitamin and mineral blemish formula." },
+      { t: "Niacinamide 10% + Zinc 1%", brand: "The Ordinary", size: "30ml", img: "https://images.unsplash.com/photo-1571781926291-c477ebfd024b?q=80&w=1200&auto=format&fit=crop", description: "High-strength vitamin and mineral blemish formula." },
       { t: "Thermal Spring Water Mist", brand: "Vichy", size: "150ml", img: "https://t4.ftcdn.net/jpg/01/68/51/55/360_F_168515550_AYObBKUuUS3k0fleEsBI0yxVGVYOm5nm.jpg", description: "Mineralizing thermal water from Vichy, France." },
-      { t: "Rose Eau de Parfum", brand: "Lancôme", size: "100ml", img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPE8fGO_s-UnhUeETzmbPu85q_WDvAslGdDg&s", description: "An elegant Damask rose composition crafted in Grasse." },
+      { t: "Rose Eau de Parfum", brand: "Lancôme", size: "100ml", img: "https://images.unsplash.com/photo-1541643600914-78b084683601?q=80&w=1200&auto=format&fit=crop", description: "An elegant Damask rose composition crafted in Grasse." },
       { t: "Bond Repair Treatment", brand: "Kérastase", size: "100ml", img: "https://www.instyle.com/thmb/izw2UyeCDGJvuOwGU9pOsz3aM_4=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/ExclusiveLead_Hair_221-ecd7cf58e8fe4252bc461380a6682142.jpg", description: "Patented bond-building treatment for chemically treated hair." },
     ],
     stats: [
