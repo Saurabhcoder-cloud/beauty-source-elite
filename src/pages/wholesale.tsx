@@ -66,8 +66,8 @@ export default function WholesalePage() {
           <div className="relative hidden lg:block">
             <div className="aspect-[4/5] overflow-hidden rounded-[2.5rem] shadow-2xl border border-[#d8c3b7] bg-white/40">
               <img
-                src="https://www.cardinalhealth.com/content/dam/corp/products/professional-products/medical-products/grid/grid-square-advanced-wound-care.jpg"
-                alt="Clinical healthcare and distribution logistics"
+                src="https://images.unsplash.com/photo-1494412519320-aa613dfb7738?q=80&w=1400&auto=format&fit=crop"
+                alt="Logistics and export operations"
                 className="h-full w-full object-cover hover:scale-105 transition-transform duration-700"
                 loading="lazy"
               />

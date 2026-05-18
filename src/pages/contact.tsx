@@ -64,7 +64,7 @@ export default function ContactPage() {
             <div className="relative w-full max-w-[520px]">
               <div className="aspect-[4/5] overflow-hidden rounded-[2.5rem] shadow-luxe border border-border bg-card">
                 <img
-                  src="https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?w=1200&q=80"
+                  src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?q=80&w=1400&auto=format&fit=crop"
                   alt="Luxury distribution and customer support"
                   className="h-full w-full object-cover"
                   loading="lazy"

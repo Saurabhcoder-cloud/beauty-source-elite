@@ -1,7 +1,15 @@
 export function Hero() {
   return (
     <section id="top" className="relative min-h-screen overflow-hidden pt-28 sm:pt-32 pb-20">
-      {/* Ambient glow */}
+      {/* Enterprise background image + ambient glow */}
+      <div className="pointer-events-none absolute inset-0 -z-20">
+        <img
+          src="https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?q=80&w=1400&auto=format&fit=crop"
+          alt="Enterprise logistics and distribution"
+          className="absolute inset-0 h-full w-full object-cover opacity-30"
+          loading="lazy"
+        />
+      </div>
       <div className="pointer-events-none absolute inset-0">
         <div className="absolute -top-40 -left-40 h-[600px] w-[600px] rounded-full bg-blush/40 blur-3xl animate-glow" />
         <div className="absolute top-1/3 -right-40 h-[500px] w-[500px] rounded-full bg-champagne/40 blur-3xl animate-glow" style={{ animationDelay: "1.5s" }} />

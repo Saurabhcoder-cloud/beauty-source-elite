@@ -51,8 +51,8 @@ export default function AboutPage() {
           <div className="relative hidden lg:block">
             <div className="aspect-[4/5] overflow-hidden rounded-[2.5rem] shadow-luxe">
               <img
-                src="https://images.unsplash.com/photo-1522335789203-aaa1f15a5045?w=1200&q=80"
-                alt="High-end product sourcing and distribution"
+                src="https://images.unsplash.com/photo-1556740749-887f6717d7e4?q=80&w=1400&auto=format&fit=crop"
+                alt="Corporate sourcing and global operations"
                 className="h-full w-full object-cover"
                 loading="lazy"
               />

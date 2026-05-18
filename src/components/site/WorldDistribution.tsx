@@ -22,6 +22,14 @@ const dots = [
 export function WorldDistribution() {
   return (
     <section id="world" className="py-20 sm:py-24 lg:py-28 bg-gradient-noir text-ivory relative overflow-hidden">
+      <div className="absolute inset-0 -z-10">
+        <img
+          src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?q=80&w=1600&auto=format&fit=crop"
+          alt="Global beauty distribution"
+          className="h-full w-full object-cover opacity-12"
+          loading="lazy"
+        />
+      </div>
       <div className="absolute inset-0 opacity-30" style={{ background: "radial-gradient(ellipse at 50% 0%, oklch(0.74 0.10 35 / 0.6), transparent 60%)" }} />
       <div className="relative mx-auto max-w-7xl px-6">
         <div className="text-center max-w-2xl mx-auto mb-16">

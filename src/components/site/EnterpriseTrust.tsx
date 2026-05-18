@@ -9,7 +9,15 @@ const pillars = [
 
 export function EnterpriseTrust() {
   return (
-    <section className="py-20 sm:py-24 lg:py-28">
+    <section className="py-20 sm:py-24 lg:py-28 relative overflow-hidden">
+      <div className="absolute inset-0 -z-10">
+        <img
+          src="https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=1600&auto=format&fit=crop"
+          alt="Verified distributor partnership"
+          className="h-full w-full object-cover opacity-10"
+          loading="lazy"
+        />
+      </div>
       <div className="mx-auto max-w-7xl px-6">
         <div className="text-center max-w-2xl mx-auto mb-16">
           <p className="text-xs tracking-[0.3em] uppercase text-muted-foreground">Enterprise Trust</p>
