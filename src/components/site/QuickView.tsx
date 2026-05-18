@@ -26,7 +26,7 @@ export function QuickView({ product, onClose }: { product: Product | null; onClo
   if (!product) return null;
 
   const subject = `Wholesale inquiry: ${product.t} (${product.brand})`;
-  const body = `Hello Cosmetics & Skincare Distr,
+  const body = `Hello Cosmetics Distr,
 
 I'd like to request wholesale pricing and availability for the following product:
 

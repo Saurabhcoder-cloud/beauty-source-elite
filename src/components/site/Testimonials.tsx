@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 
 const reviews = [
-  { name: "Aisha Khan", role: "Beauty Buyer · Glamour Stores", flag: "🇦🇪", country: "UAE", text: "We consolidated our supply through Cosmetics & Skincare Distr. Authenticity, paperwork and timing are all flawless." },
+  { name: "Aisha Khan", role: "Beauty Buyer · Glamour Stores", flag: "🇦🇪", country: "UAE", text: "We consolidated our supply through Cosmetics Distr. Authenticity, paperwork and timing are all flawless." },
   { name: "Marcus Lindgren", role: "Founder · Nordic Apothecary", flag: "🇸🇪", country: "Sweden", text: "Their European brand portfolio is unmatched. Margins finally make sense at our volume." },
   { name: "Priya Shah", role: "Procurement · Lotus Pharma", flag: "🇮🇳", country: "India", text: "Every batch arrives temperature-controlled with full COA. They feel like an in-house team." },
   { name: "Lucía Romero", role: "Director · Belleza Madrid", flag: "🇪🇸", country: "Spain", text: "Discreet, premium, and obsessive about authenticity. A rare combination in this industry." },

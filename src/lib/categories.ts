@@ -1,4 +1,4 @@
-// Master category data for Cosmetics & Skincare Distr distribution platform
+// Master category data for Cosmetics Distr distribution platform
 export type CategoryKey = "cosmetics" | "oral-care" | "healthcare";
 
 export type CategoryProduct = {

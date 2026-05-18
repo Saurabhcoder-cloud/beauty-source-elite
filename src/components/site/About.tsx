@@ -71,8 +71,8 @@ export function About() {
           <div className="relative">
             <div className="aspect-[4/5] rounded-[2.5rem] overflow-hidden shadow-luxe">
               <img
-                src="https://images.unsplash.com/photo-1620916566398-39f1143ab7be?w=1200&q=80"
-                alt="Premium product packaging and logistics"
+                src="https://images.unsplash.com/photo-1512436991641-6745cdb1723f?w=1200&q=80"
+                alt="Authorized distributor warehouse operations"
                 className="h-full w-full object-cover"
                 loading="lazy"
               />

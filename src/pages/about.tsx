@@ -2,10 +2,16 @@ import { Nav } from "@/components/site/Nav";
 import { Footer } from "@/components/site/Footer";
 import { About } from "@/components/site/About";
 import { PageFrame } from "@/components/site/PageFrame";
+import { Seo } from "@/components/site/Seo";
 
 export default function AboutPage() {
   return (
     <PageFrame>
+      <Seo
+        title="About | Cosmetics Distr"
+        description="About Cosmetics Distr: a premium Canadian global distributor specializing in authentic cosmetics, skincare, oral care and healthcare sourcing with verified distributor relationships and export-ready logistics."
+        path="/about"
+      />
       <Nav />
 
       <section className="relative overflow-hidden pt-24 sm:pt-32 pb-20 sm:pb-24">

@@ -75,7 +75,7 @@ export function Contact() {
   const set = <K extends keyof typeof form>(k: K, v: string) => setForm((f) => ({ ...f, [k]: v }));
 
   const buildBody = () =>
-`Hello Cosmetics & Skincare Distr,
+`Hello Cosmetics Distr,
 
 ${form.message || "I'd like to discuss an international wholesale opportunity."}
 
@@ -131,7 +131,7 @@ ${form.message || "I'd like to discuss an international wholesale opportunity."}
               <div className="mt-6 grid gap-4">
                 <ContactDetail label="Email" value={SALES_EMAIL} href={`mailto:${SALES_EMAIL}`} />
                 <ContactDetail label="Phone" value="202-555-0188" href="tel:2025550188" />
-                <ContactDetail label="WhatsApp" value="+1 807 695 6835" href={buildWhatsAppUrl("Hello Cosmetics & Skincare Distr, I'd like to enquire about wholesale pricing.")} />
+                <ContactDetail label="WhatsApp" value="+1 807 695 6835" href={buildWhatsAppUrl("Hello Cosmetics Distr, I'd like to enquire about wholesale pricing.")} />
                 <ContactDetail label="Office hours" value="Mon–Fri · 09:00–17:00 ET" />
               </div>
             </div>
@@ -139,8 +139,8 @@ ${form.message || "I'd like to discuss an international wholesale opportunity."}
 
           <div className="relative overflow-hidden rounded-[2.5rem] bg-[radial-gradient(circle_at_top_right,rgba(255,255,255,0.15),transparent_20%),radial-gradient(circle_at_bottom_left,rgba(255,230,215,0.2),transparent_30%)] shadow-luxe">
             <img
-              src="https://images.unsplash.com/photo-1626015449802-d031cd24bd8d?w=1200&q=80"
-              alt="Premium beauty product distribution"
+              src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?w=1200&q=80"
+              alt="International distribution office and logistics coordination"
               className="h-full w-full object-cover"
             />
             <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-noir/80 to-transparent p-8">
@@ -245,7 +245,7 @@ ${form.message || "I'd like to discuss an international wholesale opportunity."}
       </div>
 
       <a
-        href={buildWhatsAppUrl("Hello Cosmetics & Skincare Distr, I'd like to enquire about wholesale pricing.")}
+        href={buildWhatsAppUrl("Hello Cosmetics Distr, I'd like to enquire about wholesale pricing.")}
         target="_blank"
         rel="noopener noreferrer"
         aria-label="WhatsApp"

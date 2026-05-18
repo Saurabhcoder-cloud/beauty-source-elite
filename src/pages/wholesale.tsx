@@ -2,10 +2,16 @@ import { Nav } from "@/components/site/Nav";
 import { Footer } from "@/components/site/Footer";
 import { Wholesale } from "@/components/site/Wholesale";
 import { PageFrame } from "@/components/site/PageFrame";
+import { Seo } from "@/components/site/Seo";
 
 export default function WholesalePage() {
   return (
     <PageFrame>
+      <Seo
+        title="Wholesale | Cosmetics Distr"
+        description="Request wholesale pricing and export-ready logistics for authentic cosmetics, oral care and healthcare products. Cosmetics Distr handles carton, pallet and container orders with verified distributor support."
+        path="/wholesale"
+      />
       <Nav />
 
       <section className="relative overflow-hidden pt-24 sm:pt-32 pb-20 sm:pb-24 bg-gradient-to-b from-[#f8efea] via-[#f5ece6] to-[#efe3dc] text-[#1f1a17]">

@@ -2,10 +2,16 @@ import { Nav } from "@/components/site/Nav";
 import { Footer } from "@/components/site/Footer";
 import { FAQ } from "@/components/site/FAQ";
 import { PageFrame } from "@/components/site/PageFrame";
+import { Seo } from "@/components/site/Seo";
 
 export default function FAQPage() {
   return (
     <PageFrame>
+      <Seo
+        title="FAQ | Cosmetics Distr"
+        description="Frequently asked questions about authentic cosmetics distribution, European skincare suppliers, wholesale oral care sourcing, MOQ and global export logistics from Cosmetics Distr."
+        path="/faq"
+      />
       <Nav />
 
       <section className="relative overflow-hidden pt-24 sm:pt-32 pb-20 sm:pb-24">

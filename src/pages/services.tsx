@@ -2,6 +2,7 @@ import { Nav } from "@/components/site/Nav";
 import { Footer } from "@/components/site/Footer";
 import { PageFrame } from "@/components/site/PageFrame";
 import { buildWhatsAppUrl } from "@/lib/sales";
+import { Seo } from "@/components/site/Seo";
 
 const services = [
   {
@@ -62,6 +63,11 @@ const steps = [
 export default function Services() {
   return (
     <PageFrame>
+      <Seo
+        title="Services | Cosmetics Distr"
+        description="Cosmetics Distr provides premium sourcing, authorized distributor partnerships, wholesale supply and international shipping for cosmetics, oral care and healthcare buyers."
+        path="/services"
+      />
       <Nav />
       <section className="relative overflow-hidden pb-20 sm:pb-28 pt-24 sm:pt-32">
         <div className="pointer-events-none absolute inset-0">
@@ -80,11 +86,11 @@ export default function Services() {
               Strategic sourcing, logistics and premiere commercial distribution for global buyers.
             </h1>
             <p className="max-w-2xl text-lg text-muted-foreground leading-relaxed">
-              Cosmetics & Skincare Distr delivers an immersive product sourcing experience for authorized cosmetics, oral care and healthcare brands — with vetted suppliers, export-ready shipping and enterprise-grade account service.
+              Cosmetics Distr delivers an immersive product sourcing experience for authorized cosmetics, oral care and healthcare brands — with vetted suppliers, export-ready shipping and enterprise-grade account service.
             </p>
             <div className="mt-10 flex flex-wrap gap-4">
               <a
-                href={buildWhatsAppUrl("Hello Cosmetics & Skincare Distr, I would like to discuss your services and wholesale supply options.")}
+                href={buildWhatsAppUrl("Hello Cosmetics Distr, I would like to discuss your services and wholesale supply options.")}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="group inline-flex items-center gap-2 rounded-full bg-foreground text-background px-7 py-3.5 text-sm font-medium hover:bg-accent transition-all duration-300 shadow-luxe"
@@ -103,8 +109,8 @@ export default function Services() {
           <div className="relative hidden lg:block">
             <div className="aspect-[4/5] overflow-hidden rounded-[2.5rem] shadow-luxe border border-border bg-card">
               <img
-                src="https://images.unsplash.com/photo-1620916566398-39f1143ab7be?w=1200&q=80"
-                alt="Premium beauty and healthcare supply chain"
+                src="https://images.unsplash.com/photo-1515548214454-2ccddf7beb54?w=1200&q=80"
+                alt="Logistics and export-ready wholesale distribution"
                 className="h-full w-full object-cover"
                 loading="lazy"
               />

@@ -1,12 +1,13 @@
 import { useState } from "react";
 
 const faqs = [
-  { q: "Are all products 100% authentic?", a: "Yes. Every reference is sourced through authorized channels with full documentation, batch codes and certificates of authenticity available on request." },
-  { q: "Do you offer wholesale pricing?", a: "Absolutely. Pricing is tiered by volume — from carton minimums to full container loads. Submit an inquiry and our team replies within one business day." },
-  { q: "Is worldwide shipping available?", a: "We dispatch to 80+ countries via air, sea and express courier. Incoterms are flexible: EXW, FOB, CIF or DDP depending on your needs." },
-  { q: "What are the typical MOQs?", a: "MOQ varies depending on the product category and brand requirements. Our sourcing desk provides exact minimums for each brand and destination on enquiry." },
-  { q: "Do you have brand authorizations?", a: "Yes — we hold direct authorizations and supply agreements with European manufacturers and authorized distributors. Documentation provided upon contract." },
-  { q: "What are your delivery timelines?", a: "Average dispatch is within 48 hours of cleared payment. Express orders ship same-day. Sea freight transit times depend on destination port." },
+  { q: "Where to buy authentic La Roche-Posay products?", a: "Cosmetics Distr sources authentic La Roche-Posay from authorized European distributors and can support wholesale and retail buyers with verified export documentation." },
+  { q: "What is the best European skincare distributor?", a: "Our European skincare supply chain connects buyers with official brand partners and licensed distributors across France, Italy, Spain and Germany for premium product sourcing." },
+  { q: "Who is the wholesale oral care supplier for pharmacy chains?", a: "We supply oral care brands to pharmacies and dental distributors worldwide, offering cartons, pallets and container orders backed by export-ready logistics." },
+  { q: "How does international cosmetics sourcing work?", a: "We handle product validation, authorized distributor relationships, customs-ready paperwork and multi-channel freight planning to deliver international cosmetics orders reliably." },
+  { q: "What are the MOQ requirements for wholesale orders?", a: "MOQ depends on the brand, category and destination. Our commercial desk provides exact minimums for each product line, from carton orders to full containers." },
+  { q: "How do I verify an authentic skincare supplier?", a: "Cosmetics Distr provides certificates of authenticity, batch traceability and distributor authorization evidence for every procurement request." },
+  { q: "Do you offer export-ready healthcare distribution?", a: "Yes. Our healthcare supply network covers GDP-compliant logistics, cold chain handling and full regulatory documentation for international medical and consumer health orders." },
 ];
 
 export function FAQ() {

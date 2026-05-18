@@ -2,10 +2,16 @@ import { Nav } from "@/components/site/Nav";
 import { Footer } from "@/components/site/Footer";
 import { Contact } from "@/components/site/Contact";
 import { PageFrame } from "@/components/site/PageFrame";
+import { Seo } from "@/components/site/Seo";
 
 export default function ContactPage() {
   return (
     <PageFrame>
+      <Seo
+        title="Contact | Cosmetics Distr"
+        description="Contact Cosmetics Distr for verified wholesale sourcing, export-ready logistics and direct distributor pricing for cosmetics, skincare, oral care and healthcare buyers."
+        path="/contact"
+      />
       <Nav />
 
       <section className="relative overflow-hidden pt-32 pb-28">

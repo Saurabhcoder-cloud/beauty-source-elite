@@ -5,12 +5,18 @@ import { CategoryHero } from "@/components/site/category/CategoryHero";
 import { CategoryBrands } from "@/components/site/category/CategoryBrands";
 import { CategoryProducts } from "@/components/site/category/CategoryProducts";
 import { CategoryCTA } from "@/components/site/category/CategoryCTA";
+import { Seo } from "@/components/site/Seo";
 
 const cat = CATEGORIES.healthcare;
 
 export default function Healthcare() {
   return (
     <main className={`bg-background text-foreground overflow-x-clip ${cat.themeClass}`}>
+      <Seo
+        title="Healthcare Distribution | Cosmetics Distr"
+        description="Cosmetics Distr manages healthcare and consumer medical distribution with GDP-compliant logistics, supplier verification and global export support."
+        path="/healthcare"
+      />
       <Nav />
       <CategoryHero cat={cat} />
 

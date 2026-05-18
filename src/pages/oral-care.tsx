@@ -5,12 +5,18 @@ import { CategoryHero } from "@/components/site/category/CategoryHero";
 import { CategoryBrands } from "@/components/site/category/CategoryBrands";
 import { CategoryProducts } from "@/components/site/category/CategoryProducts";
 import { CategoryCTA } from "@/components/site/category/CategoryCTA";
+import { Seo } from "@/components/site/Seo";
 
 const cat = CATEGORIES["oral-care"];
 
 export default function OralCare() {
   return (
     <main className={`bg-background text-foreground overflow-x-clip ${cat.themeClass}`}>
+      <Seo
+        title="Oral Care Wholesale Distributor | Cosmetics Distr"
+        description="Cosmetics Distr sources oral care and dental supply products for pharmacy and dental distribution globally, with verified quality and export-ready logistics."
+        path="/oral-care"
+      />
       {/* Floating bubbles */}
       <div className="pointer-events-none fixed inset-0 -z-0 overflow-hidden">
         <div className="absolute top-1/4 left-[10%] h-3 w-3 rounded-full bg-cyan-300/40 animate-bubble" />
