@@ -30,7 +30,7 @@ export function Nav() {
       >
         <Link to="/" className="flex items-center gap-3 group">
           <img
-            src="/logo.svg"
+            src="/logo.jpeg"
             alt="Cosmetics Distr"
             className="h-10 w-auto object-contain transition-transform duration-300 group-hover:-translate-y-0.5"
           />
