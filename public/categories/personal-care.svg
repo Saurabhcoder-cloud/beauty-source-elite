@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1600">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f7fb"/>
+      <stop offset="100%" stop-color="#edf2f8"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="1600" fill="url(#bg)"/>
+  <rect x="120" y="280" width="240" height="660" rx="40" fill="#fff" stroke="#0b64d8" stroke-width="12"/>
+  <text x="240" y="500" fill="#0b64d8" font-family="Inter, sans-serif" font-size="56" font-weight="700">Dove</text>
+  <rect x="400" y="320" width="240" height="840" rx="44" fill="#0f4f96"/>
+  <text x="520" y="520" fill="#fff" font-family="Inter, sans-serif" font-size="56" font-weight="700" text-anchor="middle">Nivea</text>
+  <rect x="660" y="380" width="220" height="500" rx="40" fill="#f2f6ea" stroke="#6b8b3b" stroke-width="12"/>
+  <text x="770" y="540" fill="#6b8b3b" font-family="Inter, sans-serif" font-size="50" font-weight="700" text-anchor="middle">Garnier</text>
+  <rect x="880" y="880" width="240" height="330" rx="34" fill="#fff" stroke="#d03828" stroke-width="12"/>
+  <text x="1000" y="1030" fill="#d03828" font-family="Inter, sans-serif" font-size="46" font-weight="700" text-anchor="middle">Eucerin</text>
+  <rect x="470" y="980" width="300" height="220" rx="34" fill="#eef2f7"/>
+  <rect x="500" y="1010" width="240" height="16" rx="8" fill="#c5cfdc"/>
+</svg>
