@@ -1,15 +1,4 @@
 const brands = [
-  
-  "La Roche-Posay",
-  "The Ordinary",
-  "Olaplex",
-  "Bioderma",
-  "CeraVe",
-  "Vichy",
-  "Garnier",
-  "L'Oréal",
-  "Maybelline",
-  "Victoria's Secret",
 
   "L'Oréal Paris",
   "Nivea",
