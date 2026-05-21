@@ -3,7 +3,7 @@ import { buildMailto, buildWhatsAppUrl } from "@/lib/sales";
 
 const BRANDS = ["La Roche-Posay","The Ordinary","Olaplex","Bioderma","CeraVe","Vichy","Garnier","L'Oréal","Maybelline","Victoria's Secret","Other / Mixed"];
 const VOLUMES = ["1–10 cartons","10–50 cartons","50–200 cartons","Full pallet","Full container (20ft)","Full container (40ft)"];
-const CONTACTS = ["Email","WhatsApp","Phone call","Video meeting"] as const;
+const CONTACTS = ["Email","WhatsApp"] as const;
 type Contact = typeof CONTACTS[number];
 
 export function Wholesale() {
@@ -11,7 +11,6 @@ export function Wholesale() {
     company: "",
     name: "",
     email: "",
-    phone: "",
     country: "",
     brand: BRANDS[0],
     volume: VOLUMES[0],
@@ -25,7 +24,6 @@ export function Wholesale() {
 — Company: ${form.company}
 — Contact name: ${form.name}
 — Email: ${form.email}
-— Phone / WhatsApp: ${form.phone}
 — Destination country: ${form.country}
 — Brand of interest: ${form.brand}
 — Volume: ${form.volume}
@@ -82,7 +80,6 @@ ${form.notes || "(none)"}`;
             <Text label="Company" required value={form.company} onChange={(v) => set("company", v)} />
             <Text label="Full name" required value={form.name} onChange={(v) => set("name", v)} />
             <Text label="Business email" type="email" required value={form.email} onChange={(v) => set("email", v)} />
-            <Text label="Phone / WhatsApp" value={form.phone} onChange={(v) => set("phone", v)} />
             <Text label="Destination country" required value={form.country} onChange={(v) => set("country", v)} />
             <Select label="Brand of interest" value={form.brand} onChange={(v) => set("brand", v)} options={BRANDS} />
             <Select label="Order volume" value={form.volume} onChange={(v) => set("volume", v)} options={VOLUMES} />
