@@ -1,5 +1,5 @@
 const brands = [
-  [
+  
   "La Roche-Posay",
   "The Ordinary",
   "Olaplex",
