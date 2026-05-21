@@ -13,7 +13,7 @@ export function CategoryCTA({ cat }: { cat: Category }) {
           Move <span className="italic" style={{ color: cat.accent }}>{cat.name.toLowerCase()}</span><br/>volumes worldwide.
         </h2>
         <p className="mt-6 text-lg text-muted-foreground max-w-2xl mx-auto">
-          From a single carton to full 40ft containers — our wholesale desk replies within one business day with tiered pricing, MOQ varies depending on the product category and brand requirements, lead times and export documentation.
+          From a single carton to full 40ft containers our wholesale desk replies within one business day with tiered pricing, MOQ varies depending on the product category and brand requirements, lead times and export documentation.
         </p>
 
         <div className="mt-10 grid sm:grid-cols-2 gap-4 max-w-2xl mx-auto text-left">
