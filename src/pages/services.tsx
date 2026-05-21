@@ -179,40 +179,76 @@ export default function Services() {
       </section>
 
       <section className="relative overflow-hidden pb-28">
-        <div className="pointer-events-none absolute inset-x-0 top-0 h-24 bg-gradient-to-b from-rose-gold/15 to-transparent" />
+        <div className="pointer-events-none absolute inset-0">
+          <div className="absolute -top-20 left-1/2 h-[420px] w-[420px] -translate-x-1/2 rounded-full bg-rose-gold/10 blur-3xl animate-glow" />
+          <div className="absolute -bottom-16 right-0 h-[360px] w-[360px] rounded-full bg-champagne/15 blur-3xl animate-glow" />
+        </div>
         <div className="relative mx-auto max-w-7xl px-6 mt-24">
-          <div className="grid gap-10 lg:grid-cols-2 lg:gap-16 items-center">
-            <div className="space-y-8">
-              <div className="text-xs tracking-[0.3em] uppercase text-muted-foreground">Trusted capabilities</div>
-              <h2 className="font-display text-4xl md:text-5xl leading-tight">A premium services portfolio for discerning wholesale buyers.</h2>
-              <p className="text-lg text-muted-foreground leading-relaxed">
-                From authorized sourcing to customs-ready logistics, every service is crafted for enterprise buyers who require compliance, speed and luxury experience.
-              </p>
-            </div>
-            <div className="grid gap-6">
-              {services.map((service) => (
-                <div key={service.title} className="glass rounded-3xl p-10 shadow-luxe hover-lift transition-transform">
-                  <div className="h-12 w-12 rounded-2xl bg-foreground text-background flex items-center justify-center mb-5">
+          <div className="grid gap-10 lg:grid-cols-[0.95fr_1.05fr] lg:gap-14 items-start">
+            <motion.div
+              initial={{ opacity: 0, x: -24 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true, amount: 0.25 }}
+              transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
+              className="relative"
+            >
+              <div className="glass relative overflow-hidden rounded-[2.5rem] border border-border p-6 shadow-luxe">
+                <div className="absolute inset-0 bg-gradient-to-br from-rose-gold/10 via-transparent to-transparent opacity-80" />
+                <div className="absolute -top-10 -left-10 h-44 w-44 rounded-full bg-blush/20 blur-3xl" />
+                <div className="absolute -bottom-10 right-6 h-36 w-36 rounded-full bg-champagne/20 blur-3xl" />
+                <div className="relative grid gap-5">
+                  <div className="overflow-hidden rounded-[2rem] border border-border bg-noir/5">
+                    <img src={heroImages[1].src} alt={heroImages[1].alt} className="h-72 w-full object-cover transition-transform duration-700 hover:scale-105" loading="lazy" />
+                  </div>
+                  <div className="grid gap-5 sm:grid-cols-2">
+                    <div className="overflow-hidden rounded-[2rem] border border-border bg-noir/5">
+                      <img src={heroImages[0].src} alt={heroImages[0].alt} className="h-48 w-full object-cover" loading="lazy" />
+                    </div>
+                    <div className="overflow-hidden rounded-[2rem] border border-border bg-noir/5">
+                      <img src={heroImages[2].src} alt={heroImages[2].alt} className="h-48 w-full object-cover" loading="lazy" />
+                    </div>
+                  </div>
+                  <div className="glass rounded-[2rem] border border-border p-6 text-sm text-muted-foreground shadow-luxe">
+                    <div className="text-xs uppercase tracking-[0.3em] text-muted-foreground">Visual composition</div>
+                    <p className="mt-3 leading-relaxed">
+                      A premium editorial composition of cosmetics, wellness and logistics imagery to anchor the service portfolio in luxury direction.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </motion.div>
+
+            <div className="grid gap-6 sm:grid-cols-2">
+              {services.map((service, index) => (
+                <motion.div
+                  key={service.title}
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true, amount: 0.3 }}
+                  transition={{ duration: 0.6, delay: index * 0.06 }}
+                  className="glass rounded-[2rem] border border-border p-6 shadow-luxe hover:-translate-y-1 hover:shadow-xl transition-all duration-300"
+                >
+                  <div className="flex h-12 w-12 items-center justify-center rounded-3xl bg-foreground text-background mb-4">
                     <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d={service.icon} /></svg>
                   </div>
-                  <h3 className="font-display text-2xl mb-3">{service.title}</h3>
-                  <p className="text-muted-foreground text-sm leading-relaxed">{service.description}</p>
-                </div>
+                  <h3 className="font-display text-xl mb-2">{service.title}</h3>
+                  <p className="text-sm leading-relaxed text-muted-foreground">{service.description}</p>
+                </motion.div>
               ))}
             </div>
           </div>
         </div>
       </section>
 
-      <section className="relative mx-auto max-w-7xl px-6 pb-24">
-        <div className="space-y-8 text-center">
+      <section className="relative mx-auto max-w-6xl px-6 pb-20 text-center">
+        <div className="space-y-6 mx-auto max-w-3xl">
           <div className="text-xs tracking-[0.3em] uppercase text-muted-foreground">Partner showcase</div>
-          <h2 className="font-display text-4xl md:text-5xl leading-tight">Premium brand partnerships and wholesale catalog visibility.</h2>
-          <p className="mx-auto max-w-2xl text-lg text-muted-foreground leading-relaxed">
-            From global fragrance maisons to authorized healthcare manufacturers, our partnerships are curated and communicated with luxury-level storytelling.
+          <h2 className="font-display text-4xl md:text-5xl leading-tight">Premium brand partnerships and curated global distribution visibility.</h2>
+          <p className="text-lg text-muted-foreground leading-relaxed">
+            From fragrance maisons to authorized healthcare manufacturers, our relationships are presented with refined editorial polish and confidence.
           </p>
         </div>
-        <div className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
           {[
             { brand: "Chanel", label: "Elite fragrance distribution" },
             { brand: "Dior Beauty", label: "Luxury category sourcing" },
@@ -222,79 +258,106 @@ export default function Services() {
             { brand: "Dove", label: "Personal care allocation" },
             { brand: "Nivea", label: "Consumer hygiene supply" },
             { brand: "Abbott", label: "Diagnostic and medical supply" },
-          ].map((partner) => (
-            <div key={partner.brand} className="glass rounded-[2rem] border border-border p-7 shadow-luxe hover-lift transition-transform duration-300">
-              <div className="text-xl font-display">{partner.brand}</div>
+          ].map((partner, index) => (
+            <motion.div
+              key={partner.brand}
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, amount: 0.25 }}
+              transition={{ duration: 0.55, delay: index * 0.04 }}
+              className="glass rounded-[2rem] border border-border p-6 shadow-luxe hover:-translate-y-1 hover:shadow-xl transition-all duration-300"
+            >
+              <div className="text-lg font-display">{partner.brand}</div>
               <div className="mt-3 text-sm uppercase tracking-[0.3em] text-muted-foreground">{partner.label}</div>
-            </div>
+            </motion.div>
           ))}
         </div>
       </section>
 
-      <section id="service-process" className="relative mx-auto max-w-7xl px-6 pb-28">
-        <div className="grid gap-14 lg:grid-cols-[0.9fr_1.1fr] items-start">
-          <div className="space-y-6">
+      <section id="service-process" className="relative overflow-hidden mx-auto max-w-7xl px-6 pb-28">
+        <div className="pointer-events-none absolute inset-x-0 top-0 h-24 bg-gradient-to-b from-rose-gold/15 to-transparent" />
+        <div className="relative grid gap-14 lg:grid-cols-[0.95fr_1.05fr] items-start">
+          <div className="relative">
             <div className="text-xs tracking-[0.3em] uppercase text-muted-foreground">Product sourcing story</div>
-            <h2 className="font-display text-4xl md:text-5xl leading-tight">A wholesale sourcing process that feels like a luxury editorial narrative.</h2>
-            <p className="max-w-xl text-lg text-muted-foreground leading-relaxed">
+            <h2 className="font-display text-4xl md:text-5xl leading-tight mt-4">A wholesale sourcing process that feels like a luxury editorial narrative.</h2>
+            <p className="max-w-xl text-lg text-muted-foreground leading-relaxed mt-4">
               Our process is structured to reassure international buyers with transparency, quality control and premium supply chain execution from inquiry to delivery.
             </p>
-            <div className="grid gap-6">
-              {steps.map((step, index) => (
-                <motion.div
-                  key={step.title}
-                  initial={{ opacity: 0, x: -20 }}
-                  whileInView={{ opacity: 1, x: 0 }}
-                  viewport={{ once: true, amount: 0.2 }}
-                  transition={{ duration: 0.6, delay: index * 0.08 }}
-                  className="glass rounded-[2rem] border border-border p-7 shadow-luxe"
-                >
-                  <div className="flex items-center gap-4">
-                    <div className="flex h-12 w-12 items-center justify-center rounded-3xl bg-foreground text-background font-display text-lg">{index + 1}</div>
-                    <div>
-                      <h3 className="font-display text-xl">{step.title}</h3>
-                      <p className="mt-2 text-sm text-muted-foreground leading-relaxed">{step.description}</p>
+            <div className="relative mt-10 pl-8">
+              <div className="absolute left-3 top-14 h-[calc(100%-2rem)] w-px bg-gradient-to-b from-accent to-transparent" />
+              <div className="space-y-6">
+                {steps.map((step, index) => (
+                  <motion.div
+                    key={step.title}
+                    initial={{ opacity: 0, x: -20 }}
+                    whileInView={{ opacity: 1, x: 0 }}
+                    viewport={{ once: true, amount: 0.25 }}
+                    transition={{ duration: 0.6, delay: index * 0.08 }}
+                    className="relative overflow-hidden rounded-[2.5rem] border border-border bg-background/80 p-6 shadow-luxe"
+                  >
+                    <div className="absolute -left-10 top-6 flex h-12 w-12 items-center justify-center rounded-full bg-foreground text-background font-display text-sm shadow-soft">
+                      {index + 1}
                     </div>
-                  </div>
-                </motion.div>
-              ))}
-            </div>
-          </div>
-          <div className="relative rounded-[2.5rem] border border-border bg-card p-8 shadow-luxe overflow-hidden">
-            <div className="absolute -top-20 -left-20 h-56 w-56 rounded-full bg-blush/25 blur-3xl animate-glow" />
-            <div className="absolute -bottom-12 right-10 h-48 w-48 rounded-full bg-champagne/20 blur-3xl animate-glow" />
-            <div className="relative space-y-6">
-              <div className="text-xs uppercase tracking-[0.3em] text-muted-foreground">Wholesale support</div>
-              <h3 className="font-display text-3xl">Dedicated account service for authorized buyers.</h3>
-              <p className="text-sm text-muted-foreground leading-relaxed">
-                Every order receives a premium liaison, expedited documentation, shipment monitoring and post-arrival support adapted for retail, pharmacy and cross-border import customers.
-              </p>
-              <div className="grid gap-4 sm:grid-cols-2">
-                {[
-                  { label: "Export-ready quotes", value: "Instant" },
-                  { label: "Buyer liaison", value: "Enterprise" },
-                  { label: "Delivery coordination", value: "24/7" },
-                  { label: "Product verification", value: "100%" },
-                ].map((metric) => (
-                  <div key={metric.label} className="glass rounded-3xl border border-border p-5">
-                    <div className="text-2xl font-display">{metric.value}</div>
-                    <div className="mt-2 text-xs uppercase tracking-[0.3em] text-muted-foreground">{metric.label}</div>
-                  </div>
+                    <div className="relative ml-6">
+                      <h3 className="font-display text-xl">{step.title}</h3>
+                      <p className="mt-3 text-sm text-muted-foreground leading-relaxed">{step.description}</p>
+                    </div>
+                  </motion.div>
                 ))}
               </div>
-              <a
-                href={buildWhatsAppUrl("I would like to discuss premium wholesale sourcing and logistics for beauty or healthcare products.")}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 rounded-full bg-foreground text-background px-7 py-3.5 text-sm font-medium hover:bg-accent transition-all duration-300 shadow-luxe"
-              >
-                Secure a consultation
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="transition-transform group-hover:translate-x-1">
-                  <path d="M5 12h14M13 5l7 7-7 7" />
-                </svg>
-              </a>
             </div>
           </div>
+
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, amount: 0.3 }}
+            transition={{ duration: 0.8 }}
+            className="relative overflow-hidden rounded-[3rem] border border-border bg-card p-8 shadow-luxe"
+          >
+            <div className="absolute -top-20 -left-20 h-56 w-56 rounded-full bg-blush/25 blur-3xl animate-glow" />
+            <div className="absolute -bottom-16 right-10 h-48 w-48 rounded-full bg-champagne/20 blur-3xl animate-glow" />
+            <div className="relative overflow-hidden rounded-[2.5rem] border border-border bg-noir/5">
+              <img
+                src={heroImages[2].src}
+                alt={heroImages[2].alt}
+                className="h-[460px] w-full object-cover"
+                loading="lazy"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-noir/80 via-noir/10 to-transparent" />
+              <motion.div
+                animate={{ y: [0, -8, 0] }}
+                transition={{ duration: 8, repeat: Infinity, ease: "easeInOut" }}
+                className="absolute right-6 top-6 glass rounded-3xl border border-border p-4 text-right text-sm text-muted-foreground shadow-luxe"
+              >
+                <div className="uppercase tracking-[0.3em] text-[0.65rem]">Dashboard insight</div>
+                <div className="mt-3 font-display text-xl">Global allocation visibility</div>
+              </motion.div>
+            </div>
+            <div className="grid gap-4 sm:grid-cols-2 mt-8">
+              {[
+                { label: "Inventory visibility", value: "Real-time" },
+                { label: "Shipment lanes", value: "35+" },
+                { label: "Compliance checks", value: "100%" },
+                { label: "Buyer support", value: "24/7" },
+              ].map((metric) => (
+                <div key={metric.label} className="glass rounded-[1.8rem] border border-border p-5 shadow-soft">
+                  <div className="text-2xl font-display">{metric.value}</div>
+                  <div className="mt-2 text-xs uppercase tracking-[0.3em] text-muted-foreground">{metric.label}</div>
+                </div>
+              ))}
+            </div>
+            <div className="mt-8 grid gap-4 sm:grid-cols-2">
+              <div className="glass rounded-[2rem] border border-border p-5">
+                <div className="text-sm uppercase tracking-[0.3em] text-muted-foreground">Logistics node</div>
+                <div className="mt-3 font-display text-2xl">Regional hub</div>
+              </div>
+              <div className="glass rounded-[2rem] border border-border p-5">
+                <div className="text-sm uppercase tracking-[0.3em] text-muted-foreground">Export readiness</div>
+                <div className="mt-3 font-display text-2xl">Market-ready</div>
+              </div>
+            </div>
+          </motion.div>
         </div>
       </section>
 
