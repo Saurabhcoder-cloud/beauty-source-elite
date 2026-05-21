@@ -26,7 +26,7 @@ export function Categories() {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
           {cats.map((c, i) => (
             <a
-              href="#contact"
+              href="/contact"
               key={c.t}
               className="product-card group relative overflow-hidden rounded-3xl aspect-[5/6] md:aspect-[4/5] hover-lift block"
               style={{ animationDelay: `${i * 80}ms` }}

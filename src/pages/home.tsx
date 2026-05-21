@@ -10,9 +10,7 @@ import { Wholesale } from "@/components/site/Wholesale";
 import { BrandDirectory } from "@/components/site/BrandDirectory";
 import { WorldDistribution } from "@/components/site/WorldDistribution";
 import { EnterpriseTrust } from "@/components/site/EnterpriseTrust";
-import { Testimonials } from "@/components/site/Testimonials";
 import { FAQ } from "@/components/site/FAQ";
-import { Contact } from "@/components/site/Contact";
 import { Footer } from "@/components/site/Footer";
 import { Seo } from "@/components/site/Seo";
 
@@ -37,9 +35,7 @@ export default function Home() {
       <WorldDistribution />
       <EnterpriseTrust />
       <Wholesale />
-      <Testimonials />
       <FAQ />
-      <Contact />
       <Footer />
     </main>
   );
