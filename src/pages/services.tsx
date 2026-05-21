@@ -109,7 +109,7 @@ export default function Services() {
           <div className="relative hidden lg:block">
             <div className="aspect-[4/5] overflow-hidden rounded-[2.5rem] shadow-luxe border border-border bg-card">
               <img
-                src="https://images.unsplash.com/photo-1515548214454-2ccddf7beb54?w=1200&q=80"
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQe9PtuoCFTHUwWUaFGVNrTpBOHskaaR_o9Tg&s"
                 alt="Logistics and export-ready wholesale distribution"
                 className="h-full w-full object-cover"
                 loading="lazy"
