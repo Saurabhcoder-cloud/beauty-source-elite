@@ -96,7 +96,7 @@ const brands = [
   "Haleon",
   "Viatris",
   "Takeda",
-];
+]
 
 export function Brands() {
   const loop = [...brands, ...brands];
