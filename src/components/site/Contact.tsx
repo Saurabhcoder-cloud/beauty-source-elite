@@ -130,7 +130,6 @@ ${form.message || "I'd like to discuss an international wholesale opportunity."}
               <div className="text-xs uppercase tracking-[0.3em] text-muted-foreground">Contact details</div>
               <div className="mt-6 grid gap-4">
                 <ContactDetail label="Email" value={SALES_EMAIL} href={`mailto:${SALES_EMAIL}`} />
-                <ContactDetail label="Phone" value="202-555-0188" href="tel:2025550188" />
                 <ContactDetail label="WhatsApp" value="+1 807 695 6835" href={buildWhatsAppUrl("Hello Cosmetics Distr, I'd like to enquire about wholesale pricing.")} />
                 <ContactDetail label="Office hours" value="Mon–Fri · 09:00–17:00 ET" />
               </div>
