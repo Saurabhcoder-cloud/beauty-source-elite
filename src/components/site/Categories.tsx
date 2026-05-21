@@ -1,10 +1,10 @@
 const cats = [
-  { t: "Skincare", img: "/categories/skincare.svg", alt: "Skincare products from CeraVe, La Roche-Posay, Bioderma, Vichy and The Ordinary" },
-  { t: "Hair Care", img: "/categories/haircare.svg", alt: "Salon-grade haircare products from Olaplex, Kérastase and L'Oréal Professionnel" },
-  { t: "Makeup", img: "/categories/makeup.svg", alt: "Branded makeup packaging from MAC, Maybelline, NYX, Dior and Charlotte Tilbury" },
-  { t: "Fragrances", img: "/categories/fragrances.svg", alt: "Luxury fragrance brands including Chanel, Dior, YSL and Victoria's Secret" },
-  { t: "Personal Care", img: "/categories/personal-care.svg", alt: "Personal care essentials from Dove, Nivea, Garnier and Eucerin" },
-  { t: "Healthcare", img: "/categories/healthcare.svg", alt: "Healthcare packaging from Abbott, Bayer, Johnson & Johnson, Hartmann and BD" },
+  { t: "Skincare", img: "https://www.ceraveindia.com/-/media/project/loreal/brand-sites/cerave/americas/in/scx/products/pdp/packshots/facial-moisturising-lotion-spf-30/facial-moisturising-lotion-spf30-lg.jpg?rev=-1?w=500&hash=819CA52CA47BC3DFA5D9B049549EA0BC", alt: "Skincare products from CeraVe, La Roche-Posay, Bioderma, Vichy and The Ordinary" },
+  { t: "Hair Care", img: "https://www.lorealprofessionnel.in/-/media/project/loreal/brand-sites/lp/apac/in/hair-care/absolut-repair-molecular/pdp/pre-treatment/slider1.jpg?rev=10321e9c706c47bea0502b6a0793ef43&cx=0.5&cy=0.48&cw=360&ch=520&hash=9AF7F822376F060452067F3E44BA629B", alt: "Salon-grade haircare products from Olaplex, Kérastase and L'Oréal Professionnel" },
+  { t: "Makeup", img: "https://m.media-amazon.com/images/I/71-v-KtaZ2L.jpg", alt: "Branded makeup packaging from MAC, Maybelline, NYX, Dior and Charlotte Tilbury" },
+  { t: "Fragrances", img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROrFmndn4Olx2V9GiLhROCruhlW1Fw1lgGaA&s", alt: "Luxury fragrance brands including Chanel, Dior, YSL and Victoria's Secret" },
+  { t: "Personal Care", img: "https://m.media-amazon.com/images/I/51xh13glUzS.jpg", alt: "Personal care essentials from Dove, Nivea, Garnier and Eucerin" },
+  { t: "Healthcare", img: "https://gcaremedics.com/cdn/shop/files/omnifix-e-5x1011.webp?v=1768860962&width=533", alt: "Healthcare packaging from Abbott, Bayer, Johnson & Johnson, Hartmann and BD" },
 ];
 
 export function Categories() {
